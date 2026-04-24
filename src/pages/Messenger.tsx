@@ -230,7 +230,7 @@ export default function Messenger() {
         title="Messenger | Dieture CRM"
         description="Unified inbox for WhatsApp, Messenger, Instagram and Email — now with session history."
       />
-      <div className="flex h-[calc(100vh-4rem)] min-h-[560px] w-full overflow-hidden border-t border-gray-200 bg-white">
+      <div className="flex h-[calc(100vh-4rem)] min-h-[560px] w-full overflow-hidden border-t border-gray-200 bg-white lg:h-screen lg:border-t-0">
         <ConversationList
           conversations={filteredConversations}
           activeId={active.id}
@@ -244,7 +244,7 @@ export default function Messenger() {
         />
 
         <section className="flex min-w-0 flex-1 flex-col bg-gray-50/40">
-          <div className="border-b border-gray-200 bg-white px-5 py-3">
+          <div className="border-b border-gray-200 bg-white px-5 py-2.5">
             <ConversationHeaderCard conversation={active} />
           </div>
 

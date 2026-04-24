@@ -24,7 +24,13 @@ const LayoutContent: React.FC = () => {
           isExpanded || isHovered ? "lg:ml-[290px]" : "lg:ml-[90px]"
         } ${isMobileOpen ? "ml-0" : ""}`}
       >
-        <AppHeader />
+        {fullBleed ? (
+          <div className="lg:hidden">
+            <AppHeader />
+          </div>
+        ) : (
+          <AppHeader />
+        )}
         <div
           className={
             fullBleed
