@@ -249,7 +249,7 @@ export default function Messenger() {
           </div>
 
           <div className="flex-1 overflow-y-auto custom-scrollbar">
-            <div className="mx-auto flex max-w-3xl flex-col gap-3 px-5 py-5">
+            <div className="flex flex-col gap-3 px-5 py-5 md:px-6">
               {hasMoreHistory ? (
                 <LoadMoreHistoryButton
                   onClick={loadMoreHistory}
