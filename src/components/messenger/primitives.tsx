@@ -12,7 +12,7 @@ export function Avatar({
   color: string;
   size?: "xs" | "sm" | "md" | "lg" | "xl";
   online?: boolean;
-  indicator?: { letter: string; color: string };
+  indicator?: { node: React.ReactNode; color: string };
   className?: string;
 }) {
   const dims =
@@ -37,9 +37,9 @@ export function Avatar({
       )}
       {indicator && (
         <span
-          className={`absolute -bottom-0.5 -right-0.5 flex size-4 items-center justify-center rounded-full text-[9px] font-semibold ring-2 ring-white dark:ring-gray-900 ${indicator.color}`}
+          className={`absolute -bottom-0.5 -right-0.5 flex size-4 items-center justify-center rounded-full text-white ring-2 ring-white dark:ring-gray-900 ${indicator.color}`}
         >
-          {indicator.letter}
+          {indicator.node}
         </span>
       )}
     </span>
@@ -137,25 +137,82 @@ export function IconButton({
   );
 }
 
+function WhatsAppGlyph({ className = "" }: { className?: string }) {
+  // White phone-in-bubble silhouette on coloured backdrop
+  return (
+    <svg viewBox="0 0 32 32" fill="currentColor" className={className} aria-hidden="true">
+      <path d="M16 5C9.92 5 5 9.92 5 16c0 1.94.51 3.83 1.48 5.5L5 27l5.66-1.48A11 11 0 0 0 16 27c6.08 0 11-4.92 11-11S22.08 5 16 5Zm6.05 15.49c-.26.73-1.5 1.41-2.07 1.46-.55.05-1.06.07-3.05-.66a13.78 13.78 0 0 1-5.36-4.74c-.4-.59-.96-1.55-.96-2.96 0-1.41.74-2.1 1-2.39.26-.29.57-.36.76-.36h.55c.18 0 .42-.07.65.5l.9 2.18c.07.18.12.38-.02.6-.13.22-.2.36-.4.55-.18.18-.38.41-.55.55-.18.15-.37.31-.16.62.21.32.95 1.57 2.04 2.55 1.4 1.26 2.59 1.65 2.92 1.83.33.18.52.15.71-.09.18-.24.81-.95 1.03-1.27.21-.32.43-.27.71-.16.29.11 1.83.86 2.14 1.02.31.16.52.24.6.37.07.13.07.78-.18 1.51Z" />
+    </svg>
+  );
+}
+
+function MessengerGlyph({ className = "" }: { className?: string }) {
+  // Bubble with infinity/lightning bolt — Messenger mark
+  return (
+    <svg viewBox="0 0 32 32" fill="currentColor" className={className} aria-hidden="true">
+      <path d="M16 5C9.92 5 5 9.51 5 15.32c0 3.13 1.55 5.91 3.97 7.78v3.95l3.63-2c.96.27 1.96.42 2.97.42 6.08 0 11-4.51 11-10.32S22.08 5 16 5Zm1.18 13.83-2.84-3.03-5.55 3.03 6.1-6.46 2.92 3.03 5.47-3.03Z" />
+    </svg>
+  );
+}
+
+function InstagramGlyph({ className = "" }: { className?: string }) {
+  // Rounded square camera with circle and small dot
+  return (
+    <svg viewBox="0 0 32 32" fill="none" className={className} aria-hidden="true">
+      <rect x="6" y="6" width="20" height="20" rx="5" stroke="currentColor" strokeWidth="2.2" />
+      <circle cx="16" cy="16" r="4.6" stroke="currentColor" strokeWidth="2.2" />
+      <circle cx="22.2" cy="9.8" r="1.3" fill="currentColor" />
+    </svg>
+  );
+}
+
+function EmailGlyph({ className = "" }: { className?: string }) {
+  // Envelope
+  return (
+    <svg viewBox="0 0 32 32" fill="none" className={className} aria-hidden="true">
+      <rect x="5" y="8" width="22" height="16" rx="2.5" stroke="currentColor" strokeWidth="2.2" />
+      <path d="m6 10 10 7 10-7" stroke="currentColor" strokeWidth="2.2" strokeLinejoin="round" />
+    </svg>
+  );
+}
+
 export const PlatformMeta: Record<
   Platform,
-  { letter: string; bg: string; label: string }
+  {
+    letter: string;
+    bg: string;
+    label: string;
+    Icon: (props: { className?: string }) => React.ReactElement;
+  }
 > = {
-  whatsapp: { letter: "W", bg: "bg-emerald-500", label: "WhatsApp" },
-  messenger: { letter: "M", bg: "bg-blue-500", label: "Messenger" },
-  instagram: { letter: "I", bg: "bg-pink-500", label: "Instagram" },
-  email: { letter: "E", bg: "bg-gray-500", label: "Email" },
+  whatsapp: { letter: "W", bg: "bg-emerald-500", label: "WhatsApp", Icon: WhatsAppGlyph },
+  messenger: { letter: "M", bg: "bg-blue-500", label: "Messenger", Icon: MessengerGlyph },
+  instagram: {
+    letter: "I",
+    bg: "bg-gradient-to-br from-fuchsia-500 via-pink-500 to-amber-400",
+    label: "Instagram",
+    Icon: InstagramGlyph,
+  },
+  email: { letter: "E", bg: "bg-gray-500", label: "Email", Icon: EmailGlyph },
 };
 
-export function PlatformMiniBadge({ platform }: { platform: Platform }) {
+export function PlatformMiniBadge({
+  platform,
+  size = "sm",
+}: {
+  platform: Platform;
+  size?: "xs" | "sm" | "md";
+}) {
   const meta = PlatformMeta[platform];
+  const dims = size === "xs" ? "size-4" : size === "md" ? "size-6" : "size-5";
+  const iconSize = size === "xs" ? "size-2.5" : size === "md" ? "size-4" : "size-3";
   return (
     <span
-      className={`flex size-5 items-center justify-center rounded-full text-[10px] font-semibold text-white ${meta.bg}`}
+      className={`flex ${dims} items-center justify-center rounded-full text-white ${meta.bg}`}
       aria-label={meta.label}
       title={meta.label}
     >
-      {meta.letter}
+      <meta.Icon className={iconSize} />
     </span>
   );
 }

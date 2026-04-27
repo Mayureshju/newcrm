@@ -84,7 +84,7 @@ export function ConversationHeaderCard({
             initials={conversation.senderInitials}
             color={conversation.senderColor}
             indicator={{
-              letter: platform.letter,
+              node: <platform.Icon className="size-2.5" />,
               color: `${platform.bg} text-white`,
             }}
           />

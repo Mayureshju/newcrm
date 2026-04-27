@@ -69,10 +69,10 @@ export function SessionCard({
       <header className="flex items-start justify-between gap-3 px-5 py-4">
         <div className="flex min-w-0 items-start gap-3">
           <span
-            className={`flex size-9 shrink-0 items-center justify-center rounded-full ${meta.bg} text-[13px] font-semibold text-white`}
+            className={`flex size-9 shrink-0 items-center justify-center rounded-full text-white ${meta.bg}`}
             aria-hidden="true"
           >
-            {meta.letter}
+            <meta.Icon className="size-5" />
           </span>
           <div className="min-w-0">
             <div className="flex flex-wrap items-center gap-2">
