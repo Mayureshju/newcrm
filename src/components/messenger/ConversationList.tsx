@@ -1,3 +1,4 @@
+import { useState } from "react";
 import type {
   Conversation,
   FilterTabKey,
@@ -5,6 +6,7 @@ import type {
 } from "../../types/messenger";
 import { Icon, IconButton } from "./primitives";
 import { ConversationRow } from "./ConversationRow";
+import { AgentAvailabilityModal } from "./AgentAvailabilityModal";
 
 const FILTER_TABS: { key: FilterTabKey; label: string; count: number }[] = [
   { key: "unresolved", label: "Unresolved", count: 20 },
@@ -42,6 +44,7 @@ export function ConversationList({
   search: string;
   onSearchChange: (value: string) => void;
 }) {
+  const [agentModalOpen, setAgentModalOpen] = useState(false);
   return (
     <aside className="flex w-full max-w-[320px] shrink-0 flex-col border-r border-gray-200 bg-white dark:border-gray-800 dark:bg-gray-900">
       <div className="flex flex-col gap-3 border-b border-gray-200 px-4 pb-3 pt-4 dark:border-gray-800">
@@ -54,7 +57,11 @@ export function ConversationList({
             </span>
           </div>
           <div className="flex items-center gap-0.5">
-            <IconButton ariaLabel="Agent availability" size="sm">
+            <IconButton
+              ariaLabel="Agent availability"
+              size="sm"
+              onClick={() => setAgentModalOpen(true)}
+            >
               <Icon name="user-plus" className="size-4" />
             </IconButton>
             <IconButton ariaLabel="Recent" size="sm">
@@ -164,6 +171,11 @@ export function ConversationList({
           </ul>
         )}
       </div>
+      <AgentAvailabilityModal
+        isOpen={agentModalOpen}
+        onClose={() => setAgentModalOpen(false)}
+        onSelectConversation={onSelect}
+      />
     </aside>
   );
 }

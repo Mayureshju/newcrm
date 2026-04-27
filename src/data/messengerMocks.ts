@@ -600,6 +600,77 @@ export const AGENT_OPTIONS = [
   "Unassigned",
 ];
 
+export type AgentStatus = "available" | "busy" | "offline";
+
+export interface AgentRecord {
+  id: string;
+  name: string;
+  email: string;
+  initials: string;
+  avatarColor: string;
+  status: AgentStatus;
+  assignedCount: number;
+  isMe?: boolean;
+}
+
+export const AGENT_RECORDS: AgentRecord[] = [
+  {
+    id: "ag-1",
+    name: "Amani Glanza",
+    email: "amani.glanza@dieture.com",
+    initials: "AG",
+    avatarColor: "bg-violet-500 text-white",
+    status: "busy",
+    assignedCount: 1,
+  },
+  {
+    id: "ag-2",
+    name: "Aimene Mahdjoub",
+    email: "aimene.mahdjoub@dieture.com",
+    initials: "AM",
+    avatarColor: "bg-sky-500 text-white",
+    status: "offline",
+    assignedCount: 0,
+  },
+  {
+    id: "ag-3",
+    name: "Priya K.",
+    email: "priya.kapoor@dieture.com",
+    initials: "PK",
+    avatarColor: "bg-pink-500 text-white",
+    status: "available",
+    assignedCount: 1,
+  },
+  {
+    id: "ag-4",
+    name: "Kabir S.",
+    email: "kabir.s@dieture.com",
+    initials: "KS",
+    avatarColor: "bg-amber-500 text-white",
+    status: "offline",
+    assignedCount: 1,
+  },
+  {
+    id: "ag-5",
+    name: "Marlen Boumediene",
+    email: "marlen.b@dieture.com",
+    initials: "MB",
+    avatarColor: "bg-emerald-500 text-white",
+    status: "offline",
+    assignedCount: 0,
+  },
+  {
+    id: "ag-6",
+    name: "Ikhlas Bechichi",
+    email: "ikhlas.b@dieture.com",
+    initials: "IB",
+    avatarColor: "bg-indigo-500 text-white",
+    status: "available",
+    assignedCount: 0,
+    isMe: true,
+  },
+];
+
 export const TAG_OPTIONS = [
   "Enquiry",
   "Payment",

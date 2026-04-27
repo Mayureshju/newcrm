@@ -7,6 +7,7 @@ import type {
 import { AGENT_OPTIONS, TAG_OPTIONS } from "../../data/messengerMocks";
 import { Avatar, Icon, IconButton } from "./primitives";
 import { TagPicker } from "./TagPicker";
+import { NewTicketModal, type TicketDraft } from "./NewTicketModal";
 
 const STATUS_OPTIONS: ConvStatus[] = ["Open", "Pending", "Resolved", "Closed"];
 
@@ -14,29 +15,43 @@ function CollapsibleSection({
   title,
   open,
   onToggle,
+  headerAction,
   children,
 }: {
   title: string;
   open: boolean;
   onToggle: () => void;
+  headerAction?: React.ReactNode;
   children: React.ReactNode;
 }) {
   return (
     <section className="border-b border-gray-200 px-4 py-3 dark:border-gray-800">
-      <button
-        type="button"
-        onClick={onToggle}
-        aria-expanded={open}
-        className="flex w-full items-center justify-between gap-2 text-left"
-      >
-        <span className="text-[12.5px] font-semibold text-gray-700 dark:text-gray-200">
-          {title}
-        </span>
-        <Icon
-          name="chevron-down"
-          className={`size-4 text-gray-400 transition dark:text-gray-500 ${open ? "rotate-180" : ""}`}
-        />
-      </button>
+      <div className="flex items-center justify-between gap-2">
+        <button
+          type="button"
+          onClick={onToggle}
+          aria-expanded={open}
+          className="flex min-w-0 flex-1 items-center text-left"
+        >
+          <span className="text-[12.5px] font-semibold text-gray-700 dark:text-gray-200">
+            {title}
+          </span>
+        </button>
+        <div className="flex items-center gap-1">
+          {headerAction}
+          <button
+            type="button"
+            onClick={onToggle}
+            aria-label={open ? "Collapse" : "Expand"}
+            className="inline-flex size-6 items-center justify-center rounded-md text-gray-400 transition hover:bg-gray-100 dark:text-gray-500 dark:hover:bg-white/[0.06]"
+          >
+            <Icon
+              name="chevron-down"
+              className={`size-4 transition ${open ? "rotate-180" : ""}`}
+            />
+          </button>
+        </div>
+      </div>
       {open && <div className="pt-2">{children}</div>}
     </section>
   );
@@ -62,10 +77,21 @@ export function SummaryPanel({
 }) {
   const [open, setOpen] = useState({
     contact: true,
-    tickets: false,
+    tickets: true,
     properties: true,
   });
+  const [tickets, setTickets] = useState<TicketDraft[]>([]);
+  const [newTicketOpen, setNewTicketOpen] = useState(false);
   const summaryChars = properties.summary.length;
+
+  function addTicket(draft: TicketDraft) {
+    setTickets((prev) => [
+      { ...draft, id: `t-${Date.now()}` },
+      ...prev,
+    ]);
+    setNewTicketOpen(false);
+    setOpen((v) => ({ ...v, tickets: true }));
+  }
   return (
     <aside className="hidden w-80 shrink-0 flex-col border-l border-gray-200 bg-white dark:border-gray-800 dark:bg-gray-900 xl:flex">
       <div className="flex items-center justify-between border-b border-gray-200 px-4 py-3 dark:border-gray-800">
@@ -131,10 +157,46 @@ export function SummaryPanel({
           title="Tickets"
           open={open.tickets}
           onToggle={() => setOpen((v) => ({ ...v, tickets: !v.tickets }))}
+          headerAction={
+            <button
+              type="button"
+              onClick={() => setNewTicketOpen(true)}
+              aria-label="New ticket"
+              title="New ticket"
+              className="inline-flex size-6 items-center justify-center rounded-md text-brand-500 transition hover:bg-brand-50 dark:text-brand-400 dark:hover:bg-brand-500/10"
+            >
+              <Icon name="plus" className="size-4" />
+            </button>
+          }
         >
-          <div className="py-3 text-[12px] text-gray-500 dark:text-gray-400">
-            No tickets linked to this conversation.
-          </div>
+          {tickets.length === 0 ? (
+            <div className="py-3 text-[12px] text-gray-500 dark:text-gray-400">
+              No tickets linked to this conversation.
+            </div>
+          ) : (
+            <ul className="flex flex-col gap-1.5 py-1">
+              {tickets.map((t) => (
+                <li
+                  key={t.id}
+                  className="rounded-md border border-gray-200 bg-white px-3 py-2 dark:border-gray-700 dark:bg-gray-800"
+                >
+                  <div className="flex items-start justify-between gap-2">
+                    <p className="line-clamp-2 text-[12.5px] font-medium text-gray-800 dark:text-white/90">
+                      {t.subject}
+                    </p>
+                    <span className="inline-flex shrink-0 rounded-full bg-brand-50 px-1.5 py-0.5 text-[10px] font-medium text-brand-700 dark:bg-brand-500/15 dark:text-brand-300">
+                      {t.type}
+                    </span>
+                  </div>
+                  {t.description && (
+                    <p className="mt-1 line-clamp-2 text-[11.5px] text-gray-500 dark:text-gray-400">
+                      {t.description}
+                    </p>
+                  )}
+                </li>
+              ))}
+            </ul>
+          )}
         </CollapsibleSection>
 
         <CollapsibleSection
@@ -234,6 +296,12 @@ export function SummaryPanel({
           </div>
         </CollapsibleSection>
       </div>
+      <NewTicketModal
+        isOpen={newTicketOpen}
+        onClose={() => setNewTicketOpen(false)}
+        onCreate={addTicket}
+        contactName={conversation.senderName}
+      />
     </aside>
   );
 }
