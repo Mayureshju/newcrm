@@ -1,0 +1,316 @@
+- generic [ref=e3]:
+  - complementary [ref=e4]:
+    - link "Home" [ref=e6] [cursor=pointer]:
+      - /url: /
+      - img "Logo" [ref=e7]
+    - navigation [ref=e12]:
+      - generic [ref=e14]:
+        - heading "Menu" [level=2] [ref=e15]
+        - list [ref=e16]:
+          - listitem [ref=e17]:
+            - link "Dashboard" [ref=e18] [cursor=pointer]:
+              - /url: /
+              - img [ref=e20]
+              - generic [ref=e22]: Dashboard
+          - listitem [ref=e23]:
+            - link "Calendar" [ref=e24] [cursor=pointer]:
+              - /url: /calendar
+              - img [ref=e26]
+              - generic [ref=e28]: Calendar
+          - listitem [ref=e29]:
+            - link "Messenger" [ref=e30] [cursor=pointer]:
+              - /url: /messenger
+              - img [ref=e32]
+              - generic [ref=e34]: Messenger
+          - listitem [ref=e35]:
+            - link "Leads" [ref=e36] [cursor=pointer]:
+              - /url: /leads
+              - img [ref=e38]
+              - generic [ref=e40]: Leads
+          - listitem [ref=e41]:
+            - link "Support Tickets" [ref=e42] [cursor=pointer]:
+              - /url: /tickets
+              - img [ref=e44]
+              - generic [ref=e46]: Support Tickets
+          - listitem [ref=e47]:
+            - link "User Profile" [ref=e48] [cursor=pointer]:
+              - /url: /profile
+              - img [ref=e50]
+              - generic [ref=e52]: User Profile
+  - generic [ref=e55]:
+    - complementary [ref=e56]:
+      - generic [ref=e57]:
+        - generic [ref=e58]:
+          - generic [ref=e59]:
+            - heading "Messages" [level=2] [ref=e60]
+            - generic [ref=e61]: Online
+          - generic [ref=e63]:
+            - button "Agent availability" [ref=e64] [cursor=pointer]:
+              - img [ref=e65]
+            - button "Recent" [ref=e67] [cursor=pointer]:
+              - img [ref=e68]
+            - button "Blocked" [ref=e70] [cursor=pointer]:
+              - img [ref=e71]
+            - button "New conversation" [ref=e74] [cursor=pointer]:
+              - img [ref=e75]
+        - generic [ref=e77]:
+          - generic [ref=e78]:
+            - generic [ref=e79]: Filter by platform
+            - combobox "Filter by platform" [ref=e80]:
+              - option "All" [selected]
+              - option "WhatsApp"
+              - option "Messenger"
+              - option "Instagram"
+              - option "Email"
+            - img
+          - button "Filter" [ref=e81] [cursor=pointer]:
+            - img [ref=e82]
+            - text: Filter
+        - generic [ref=e84]:
+          - generic [ref=e85]: Search
+          - img
+          - searchbox "Search" [ref=e86]
+      - generic [ref=e87]:
+        - button "Unresolved(20)" [ref=e88] [cursor=pointer]:
+          - text: Unresolved
+          - generic [ref=e89]: (20)
+        - button "My Open(40)" [ref=e90] [cursor=pointer]:
+          - text: My Open
+          - generic [ref=e91]: (40)
+        - button "Unassigned(50)" [ref=e93] [cursor=pointer]:
+          - text: Unassigned
+          - generic [ref=e94]: (50)
+        - button "Resolved(12)" [ref=e95] [cursor=pointer]:
+          - text: Resolved
+          - generic [ref=e96]: (12)
+      - list [ref=e98]:
+        - listitem [ref=e99]:
+          - button "N Nour Aldeen Open just now Hi, can I connect with a Dieture support executive 97431037027 WhatsApp 2" [ref=e389] [cursor=pointer]:
+            - generic [ref=e102]: "N"
+            - generic [ref=e104]:
+              - generic [ref=e105]:
+                - generic [ref=e106]:
+                  - generic [ref=e107]: Nour Aldeen
+                  - generic [ref=e108]: Open
+                - generic [ref=e110]: just now
+              - generic [ref=e111]: Hi, can I connect with a Dieture support executive
+              - generic [ref=e112]:
+                - generic [ref=e113]: "97431037027"
+                - generic "WhatsApp" [ref=e114]: W
+            - generic [ref=e390]: "2"
+        - listitem [ref=e115]:
+          - button "L Linan Smith Open 12 min ago Thanks, I'll wait for the confirmation. lnn.smith Messenger" [active] [ref=e116] [cursor=pointer]:
+            - generic [ref=e118]: L
+            - generic [ref=e120]:
+              - generic [ref=e121]:
+                - generic [ref=e122]:
+                  - generic [ref=e123]: Linan Smith
+                  - generic [ref=e124]: Open
+                - generic [ref=e126]: 12 min ago
+              - generic [ref=e127]: Thanks, I'll wait for the confirmation.
+              - generic [ref=e128]:
+                - generic [ref=e129]: lnn.smith
+                - generic "Messenger" [ref=e130]: M
+        - listitem [ref=e131]:
+          - button "S Sana Khan Pending Yesterday Just DM'd the screenshot — check 👀 sana.k Instagram 5" [ref=e132] [cursor=pointer]:
+            - generic [ref=e134]: S
+            - generic [ref=e135]:
+              - generic [ref=e136]:
+                - generic [ref=e137]:
+                  - generic [ref=e138]: Sana Khan
+                  - generic [ref=e139]: Pending
+                - generic [ref=e141]: Yesterday
+              - generic [ref=e142]: Just DM'd the screenshot — check 👀
+              - generic [ref=e143]:
+                - generic [ref=e144]: sana.k
+                - generic "Instagram" [ref=e145]: I
+            - generic [ref=e146]: "5"
+        - listitem [ref=e147]:
+          - button "R Rohit Smith Resolved 2 days ago Thanks, appreciate the help! +908999888 WhatsApp" [ref=e148] [cursor=pointer]:
+            - generic [ref=e150]: R
+            - generic [ref=e151]:
+              - generic [ref=e152]:
+                - generic [ref=e153]:
+                  - generic [ref=e154]: Rohit Smith
+                  - generic [ref=e155]: Resolved
+                - generic [ref=e157]: 2 days ago
+              - generic [ref=e158]: Thanks, appreciate the help!
+              - generic [ref=e159]:
+                - generic [ref=e160]: "+908999888"
+                - generic "WhatsApp" [ref=e161]: W
+    - generic [ref=e162]:
+      - generic [ref=e165]:
+        - generic [ref=e391]:
+          - generic [ref=e166]:
+            - generic [ref=e167]: L
+            - generic [ref=e168]: M
+          - generic:
+            - generic [ref=e169]: Messenger
+            - generic [ref=e170]: —
+            - generic: Linan Smith
+            - generic [ref=e171]: lnn.smith
+        - generic [ref=e172]:
+          - generic [ref=e173]: Open
+          - generic [ref=e392]: On Track
+          - generic [ref=e177]:
+            - generic [ref=e179]: P
+            - generic [ref=e180]: Priya K.
+          - button "Add collaborator" [ref=e182] [cursor=pointer]:
+            - img [ref=e183]
+          - button "Quick actions" [ref=e185] [cursor=pointer]:
+            - img [ref=e186]
+          - button "Notes" [ref=e188] [cursor=pointer]:
+            - img [ref=e189]
+          - button "More options" [ref=e192] [cursor=pointer]:
+            - img [ref=e193]
+          - button "Show details" [ref=e197] [cursor=pointer]:
+            - img [ref=e198]
+      - generic [ref=e250]:
+        - generic [ref=e395]: 22 Mar 2026
+        - generic [ref=e396]:
+          - generic [ref=e398]: "N"
+          - generic [ref=e399]:
+            - generic [ref=e401]: Do u have any offers?
+            - generic [ref=e402]:
+              - text: 09:45
+              - generic "Seen" [ref=e403]: AM
+        - generic [ref=e405]:
+          - img [ref=e406]
+          - generic [ref=e409]: "\"WhatsApp - High\""
+          - generic [ref=e410]: SLA first response breached
+        - generic [ref=e411]:
+          - generic [ref=e412]:
+            - generic [ref=e413]: Aimene Mahdjoub
+            - generic [ref=e414]:
+              - generic [ref=e415]: Hello, Thank you for reaching out!
+              - generic [ref=e416]: Please allow me to check for any available offers currently
+              - generic [ref=e417]:
+                - text: 09:52
+                - img [ref=e418]
+                - generic "Seen" [ref=e420]:
+                  - generic [ref=e421]: AM
+          - generic [ref=e423]: A
+        - generic [ref=e425]:
+          - img [ref=e426]
+          - generic [ref=e429]: "\"WhatsApp - High\""
+          - generic [ref=e430]: SLA resolution breached
+        - generic [ref=e431]:
+          - generic [ref=e432]:
+            - generic [ref=e433]: Aimene Mahdjoub
+            - generic [ref=e434]:
+              - generic [ref=e435]: Hello again! currently we do not have offers running. however if any offer comes up we will let you know
+              - generic [ref=e436]:
+                - text: 14:46
+                - img [ref=e437]
+          - generic [ref=e440]: A
+        - generic [ref=e443]:
+          - img [ref=e444]
+          - text: Resolved by
+          - generic [ref=e447]: Aimene Mahdjoub
+        - generic [ref=e449]:
+          - generic [ref=e450]:
+            - generic [ref=e451]: Bot
+            - generic [ref=e452]:
+              - paragraph [ref=e453]: "Summary: -"
+              - paragraph [ref=e454]: Conversation resolved in 301.48 minutes.
+              - paragraph [ref=e455]: "Tags: Enquiry"
+              - paragraph [ref=e456]: "Assigned to: Aimene Mahdjoub"
+              - paragraph [ref=e457]: "Last Assigned Agent: Ikhlas Bechichi"
+            - generic [ref=e458]: 02:46 pm
+          - generic [ref=e460]: B
+      - generic [ref=e279]:
+        - generic [ref=e280]:
+          - button "Reply" [ref=e281] [cursor=pointer]
+          - button "Private Note" [ref=e282] [cursor=pointer]
+        - generic [ref=e283]:
+          - generic [ref=e284]:
+            - generic [ref=e285]: Message
+            - textbox "Message" [ref=e286]:
+              - /placeholder: Type your message here…
+          - generic [ref=e287]:
+            - generic [ref=e288]:
+              - button "Attach file" [ref=e289] [cursor=pointer]:
+                - img [ref=e290]
+              - button "Insert emoji" [ref=e292] [cursor=pointer]:
+                - img [ref=e293]
+              - button "Attach image" [ref=e298] [cursor=pointer]:
+                - img [ref=e299]
+              - button "Formatting" [ref=e303] [cursor=pointer]:
+                - img [ref=e304]
+            - button "Send" [disabled] [ref=e306]:
+              - text: Send
+              - img [ref=e307]
+        - paragraph [ref=e310]: Enter to send · Shift + Enter for a new line
+    - complementary [ref=e311]:
+      - generic [ref=e312]:
+        - heading "Summary" [level=3] [ref=e313]
+        - button "Close summary" [ref=e314] [cursor=pointer]:
+          - img [ref=e315]
+      - generic [ref=e317]:
+        - generic [ref=e318]:
+          - button "Contact info" [expanded] [ref=e319] [cursor=pointer]:
+            - generic [ref=e320]: Contact info
+            - img [ref=e321]
+          - generic [ref=e323]:
+            - generic [ref=e324]:
+              - generic [ref=e326]: L
+              - generic [ref=e327]:
+                - paragraph [ref=e328]: Linan Smith
+                - paragraph [ref=e329]: Active now
+                - generic [ref=e330]:
+                  - button "Copy link" [ref=e331] [cursor=pointer]:
+                    - img [ref=e332]
+                  - button "Refresh" [ref=e334] [cursor=pointer]:
+                    - img [ref=e335]
+                  - button "Share" [ref=e337] [cursor=pointer]:
+                    - img [ref=e338]
+            - generic [ref=e343]:
+              - generic [ref=e344]:
+                - generic [ref=e345]: Phone Number
+                - generic [ref=e346]:
+                  - generic [ref=e347]: —
+                  - img [ref=e348]
+              - button "Manage" [ref=e351] [cursor=pointer]
+        - button "Tickets" [ref=e353] [cursor=pointer]:
+          - generic [ref=e354]: Tickets
+          - img [ref=e355]
+        - generic [ref=e357]:
+          - button "Conversation properties" [expanded] [ref=e358] [cursor=pointer]:
+            - generic [ref=e359]: Conversation properties
+            - img [ref=e360]
+          - generic [ref=e363]:
+            - generic [ref=e364]:
+              - generic [ref=e365]:
+                - generic [ref=e366]: Summary
+                - generic [ref=e367]: 0 Chars
+              - textbox "Summary 0 Chars" [ref=e368]:
+                - /placeholder: Summary
+            - generic [ref=e369]:
+              - generic [ref=e370]: Tags
+              - button "VIP" [ref=e461] [cursor=pointer]:
+                - generic [ref=e372]: VIP
+                - img [ref=e373]
+              - generic [ref=e462]:
+                - text: VIP
+                - button "Remove VIP" [ref=e463] [cursor=pointer]:
+                  - img [ref=e464]
+            - generic [ref=e380]:
+              - generic [ref=e381]: Status
+              - generic [ref=e382]:
+                - combobox "Status" [ref=e383]:
+                  - option "Open" [selected]
+                  - option "Pending"
+                  - option "Resolved"
+                  - option "Closed"
+                - img
+            - generic [ref=e384]:
+              - generic [ref=e385]: Agent
+              - generic [ref=e386]:
+                - combobox "Agent" [ref=e387]:
+                  - option "Amani Glanza"
+                  - option "Aimene Mahdjoub"
+                  - option "Priya K." [selected]
+                  - option "Kabir S."
+                  - option "Unassigned"
+                - img
+            - button "Update" [ref=e388] [cursor=pointer]

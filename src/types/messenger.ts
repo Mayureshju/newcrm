@@ -124,6 +124,8 @@ export interface SeenIndicator {
   sessionIndex: number;
   actorInitials: string;
   actorColor: string;
+  actorName: string;
+  seenAtLabel: string;
   label: string;
 }
 

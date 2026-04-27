@@ -308,6 +308,8 @@ export const MOCK_SESSION_ITEMS: Record<string, ThreadItem[]> = {
       sessionIndex: 0,
       actorInitials: "AM",
       actorColor: "bg-violet-500 text-white",
+      actorName: "Amani Glanza",
+      seenAtLabel: "22 Mar 2026, 09:46",
       label: "Seen",
     },
     {
@@ -340,6 +342,8 @@ export const MOCK_SESSION_ITEMS: Record<string, ThreadItem[]> = {
       sessionIndex: 0,
       actorInitials: "AM",
       actorColor: "bg-violet-500 text-white",
+      actorName: "Amani Glanza",
+      seenAtLabel: "22 Mar 2026, 09:55",
       label: "Seen",
     },
     {
@@ -542,6 +546,8 @@ export const MOCK_SESSION_ITEMS: Record<string, ThreadItem[]> = {
       sessionIndex: 3,
       actorInitials: "AG",
       actorColor: "bg-violet-500 text-white",
+      actorName: "Amani Glanza",
+      seenAtLabel: "Today, 12:18",
       label: "Seen",
     },
     {
