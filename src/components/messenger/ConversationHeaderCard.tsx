@@ -24,7 +24,7 @@ function SlaRow({
 }) {
   if (!dueLabel && !actualLabel) return null;
   return (
-    <div className="flex flex-wrap items-center gap-x-2 gap-y-0.5 text-[12px] text-gray-700">
+    <div className="flex flex-wrap items-center gap-x-2 gap-y-0.5 text-[12px] text-gray-700 dark:text-gray-300">
       {variant === "due" ? (
         breached ? (
           <StatusPill label="Breached" tone="danger" />
@@ -35,12 +35,12 @@ function SlaRow({
         <SoftChip>On Track</SoftChip>
       )}
       <span className="min-w-0 break-words">
-        <span className="font-semibold text-gray-800">{label}:</span>{" "}
+        <span className="font-semibold text-gray-800 dark:text-white/90">{label}:</span>{" "}
         <span className="font-medium">{dueLabel}</span>
         {actualLabel && (
           <>
             {" · "}
-            <span className="text-gray-500">Actual:</span>{" "}
+            <span className="text-gray-500 dark:text-gray-400">Actual:</span>{" "}
             <span className="font-medium">{actualLabel}</span>
           </>
         )}
@@ -75,7 +75,7 @@ export function ConversationHeaderCard({
     );
 
   return (
-    <div className="rounded-xl border border-gray-200 bg-white px-4 py-2.5 shadow-theme-xs sm:px-5">
+    <div className="rounded-xl border border-gray-200 bg-white px-4 py-2.5 shadow-theme-xs dark:border-gray-800 dark:bg-gray-900 sm:px-5">
       {/* Compact row — always visible */}
       <div className="flex items-center justify-between gap-3">
         <div className="flex min-w-0 items-center gap-2.5">
@@ -89,14 +89,14 @@ export function ConversationHeaderCard({
             }}
           />
           <div className="flex min-w-0 flex-wrap items-baseline gap-x-2 gap-y-0">
-            <span className="text-[12px] text-gray-500">
+            <span className="text-[12px] text-gray-500 dark:text-gray-400">
               {conversation.platformHandle}
             </span>
-            <span className="text-gray-300">—</span>
-            <span className="truncate text-[14px] font-semibold text-gray-800">
+            <span className="text-gray-300 dark:text-gray-600">—</span>
+            <span className="truncate text-[14px] font-semibold text-gray-800 dark:text-white/90">
               {conversation.senderName}
             </span>
-            <span className="text-[12px] text-gray-400">
+            <span className="text-[12px] text-gray-400 dark:text-gray-500">
               {conversation.senderId}
             </span>
           </div>
@@ -109,7 +109,7 @@ export function ConversationHeaderCard({
           {hasSla && !anyBreach && !expanded && (
             <StatusPill label="On Track" tone="success" />
           )}
-          <span className="hidden items-center gap-1.5 rounded-full border border-gray-200 bg-white px-2 py-0.5 text-[11px] font-medium text-gray-700 sm:inline-flex">
+          <span className="hidden items-center gap-1.5 rounded-full border border-gray-200 bg-white px-2 py-0.5 text-[11px] font-medium text-gray-700 dark:border-gray-700 dark:bg-gray-800 dark:text-gray-200 sm:inline-flex">
             <Avatar
               size="xs"
               initials={conversation.assigneeInitials}
@@ -119,7 +119,7 @@ export function ConversationHeaderCard({
               {conversation.assignee}
             </span>
           </span>
-          <div className="mx-0.5 h-5 w-px bg-gray-200" />
+          <div className="mx-0.5 h-5 w-px bg-gray-200 dark:bg-gray-700" />
           <IconButton ariaLabel="Add collaborator" size="sm">
             <Icon name="user-plus" className="size-4" />
           </IconButton>
@@ -138,7 +138,7 @@ export function ConversationHeaderCard({
               onClick={() => setExpanded((v) => !v)}
               aria-expanded={expanded}
               aria-label={expanded ? "Hide details" : "Show details"}
-              className="inline-flex size-7 items-center justify-center rounded-md text-gray-500 transition hover:bg-gray-100 hover:text-gray-700"
+              className="inline-flex size-7 items-center justify-center rounded-md text-gray-500 transition hover:bg-gray-100 hover:text-gray-700 dark:text-gray-400 dark:hover:bg-white/[0.06] dark:hover:text-gray-200"
             >
               <Icon
                 name="chevron-down"
@@ -150,15 +150,15 @@ export function ConversationHeaderCard({
       </div>
 
       {expanded && (
-        <div className="mt-2 border-t border-gray-100 pt-2">
+        <div className="mt-2 border-t border-gray-100 pt-2 dark:border-gray-800">
           <div className="mb-2 flex flex-wrap items-center gap-1.5">
             <a
               href="#agent"
-              className="text-[12.5px] font-medium text-brand-500 hover:underline"
+              className="text-[12.5px] font-medium text-brand-500 hover:underline dark:text-brand-400"
             >
               {conversation.assignee}
             </a>
-            <span className="inline-flex items-center gap-1 rounded-full bg-amber-100 px-2 py-0.5 text-[11px] font-medium text-amber-700">
+            <span className="inline-flex items-center gap-1 rounded-full bg-amber-100 px-2 py-0.5 text-[11px] font-medium text-amber-700 dark:bg-amber-500/15 dark:text-amber-300">
               <Icon name="eye" className="size-3" />
               {conversation.assigneeInitials}
             </span>

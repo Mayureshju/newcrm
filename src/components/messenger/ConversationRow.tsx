@@ -24,8 +24,8 @@ export function ConversationRow({
       onClick={onClick}
       className={`relative flex w-full items-start gap-3 rounded-lg px-3 py-3 text-left transition ${
         active
-          ? "bg-indigo-50/80 ring-1 ring-indigo-100"
-          : "hover:bg-gray-50"
+          ? "bg-indigo-50/80 ring-1 ring-indigo-100 dark:bg-brand-500/10 dark:ring-brand-500/30"
+          : "hover:bg-gray-50 dark:hover:bg-white/[0.04]"
       }`}
     >
       <Avatar
@@ -37,20 +37,20 @@ export function ConversationRow({
       <span className="flex min-w-0 flex-1 flex-col gap-1">
         <span className="flex items-center justify-between gap-2">
           <span className="flex items-center gap-2 truncate">
-            <span className="truncate text-[14px] font-semibold text-gray-800">
+            <span className="truncate text-[14px] font-semibold text-gray-800 dark:text-white/90">
               {conversation.senderName}
             </span>
             <StatusPill label={conversation.status} tone={statusTone} />
           </span>
-          <span className="shrink-0 text-[11px] text-gray-400">
+          <span className="shrink-0 text-[11px] text-gray-400 dark:text-gray-500">
             {conversation.updatedLabel}
           </span>
         </span>
-        <span className="truncate text-[12px] text-gray-500">
+        <span className="truncate text-[12px] text-gray-500 dark:text-gray-400">
           {conversation.lastPreview}
         </span>
         <span className="flex items-center justify-between gap-2 pt-0.5">
-          <span className="truncate text-[11px] text-gray-400">
+          <span className="truncate text-[11px] text-gray-400 dark:text-gray-500">
             {conversation.senderId}
           </span>
           <PlatformMiniBadge platform={conversation.platform} />

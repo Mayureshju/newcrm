@@ -33,11 +33,11 @@ export function Avatar({
         {initials}
       </span>
       {online && (
-        <span className="absolute bottom-0 right-0 size-2 rounded-full bg-emerald-500 ring-2 ring-white" />
+        <span className="absolute bottom-0 right-0 size-2 rounded-full bg-emerald-500 ring-2 ring-white dark:ring-gray-900" />
       )}
       {indicator && (
         <span
-          className={`absolute -bottom-0.5 -right-0.5 flex size-4 items-center justify-center rounded-full text-[9px] font-semibold ring-2 ring-white ${indicator.color}`}
+          className={`absolute -bottom-0.5 -right-0.5 flex size-4 items-center justify-center rounded-full text-[9px] font-semibold ring-2 ring-white dark:ring-gray-900 ${indicator.color}`}
         >
           {indicator.letter}
         </span>
@@ -55,14 +55,14 @@ export function StatusPill({
 }) {
   const palette =
     tone === "success"
-      ? "bg-emerald-50 text-emerald-700"
+      ? "bg-emerald-50 text-emerald-700 dark:bg-emerald-500/10 dark:text-emerald-300"
       : tone === "danger"
-        ? "bg-rose-50 text-rose-600"
+        ? "bg-rose-50 text-rose-600 dark:bg-rose-500/10 dark:text-rose-300"
         : tone === "info"
-          ? "bg-brand-50 text-brand-700"
+          ? "bg-brand-50 text-brand-700 dark:bg-brand-500/10 dark:text-brand-300"
           : tone === "neutral"
-            ? "bg-gray-100 text-gray-600"
-            : "bg-amber-50 text-amber-700";
+            ? "bg-gray-100 text-gray-600 dark:bg-white/[0.06] dark:text-gray-300"
+            : "bg-amber-50 text-amber-700 dark:bg-amber-500/15 dark:text-amber-300";
   const dot =
     tone === "success"
       ? "bg-emerald-500"
@@ -92,7 +92,7 @@ export function SoftChip({
 }) {
   return (
     <span
-      className={`inline-flex items-center gap-1.5 rounded-full bg-gray-100 px-2 py-0.5 text-[11px] font-medium text-gray-600 ${className}`}
+      className={`inline-flex items-center gap-1.5 rounded-full bg-gray-100 px-2 py-0.5 text-[11px] font-medium text-gray-600 dark:bg-white/[0.06] dark:text-gray-300 ${className}`}
     >
       {children}
     </span>
@@ -118,12 +118,12 @@ export function IconButton({
 }) {
   const dims = size === "sm" ? "size-7" : "size-8";
   const toneClass = active
-    ? "text-brand-600 bg-brand-50"
+    ? "text-brand-600 bg-brand-50 dark:bg-brand-500/15 dark:text-brand-300"
     : tone === "danger"
-      ? "text-rose-500 hover:bg-rose-50"
+      ? "text-rose-500 hover:bg-rose-50 dark:text-rose-400 dark:hover:bg-rose-500/10"
       : tone === "primary"
-        ? "text-brand-500 hover:bg-brand-50"
-        : "text-gray-500 hover:bg-gray-100 hover:text-gray-700";
+        ? "text-brand-500 hover:bg-brand-50 dark:text-brand-400 dark:hover:bg-brand-500/10"
+        : "text-gray-500 hover:bg-gray-100 hover:text-gray-700 dark:text-gray-400 dark:hover:bg-white/[0.06] dark:hover:text-gray-200";
   return (
     <button
       type={type}

@@ -39,7 +39,7 @@ export function Composer({
   return (
     <form
       onSubmit={handleSubmit}
-      className="border-t border-gray-200 bg-white px-5 py-3"
+      className="border-t border-gray-200 bg-white px-5 py-3 dark:border-gray-800 dark:bg-gray-900"
     >
       <div className="mb-2 flex items-center gap-0">
         {TABS.map((item) => {
@@ -52,9 +52,9 @@ export function Composer({
               className={`rounded-t-md px-3 py-1.5 text-[12.5px] font-medium transition ${
                 active
                   ? item.key === "note"
-                    ? "bg-amber-50 text-amber-700"
-                    : "bg-gray-100 text-gray-800"
-                  : "text-gray-500 hover:text-gray-700"
+                    ? "bg-amber-50 text-amber-700 dark:bg-amber-500/15 dark:text-amber-300"
+                    : "bg-gray-100 text-gray-800 dark:bg-white/[0.06] dark:text-white/90"
+                  : "text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200"
               }`}
             >
               {item.label}
@@ -65,8 +65,8 @@ export function Composer({
       <div
         className={`rounded-md border transition ${
           tab === "note"
-            ? "border-amber-200 bg-amber-50/40 focus-within:border-amber-400 focus-within:ring-4 focus-within:ring-amber-100"
-            : "border-gray-200 focus-within:border-brand-500 focus-within:ring-4 focus-within:ring-brand-500/10"
+            ? "border-amber-200 bg-amber-50/40 focus-within:border-amber-400 focus-within:ring-4 focus-within:ring-amber-100 dark:border-amber-500/30 dark:bg-amber-500/10 dark:focus-within:ring-amber-500/20"
+            : "border-gray-200 focus-within:border-brand-500 focus-within:ring-4 focus-within:ring-brand-500/10 dark:border-gray-700 dark:bg-gray-800"
         }`}
       >
         <label className="block">
@@ -83,10 +83,10 @@ export function Composer({
                 ? "Write a private note visible only to your team…"
                 : "Type your message here…"
             }
-            className="block w-full resize-none rounded-md bg-transparent px-3 py-2.5 text-[13.5px] text-gray-800 placeholder:text-gray-400 focus:outline-none"
+            className="block w-full resize-none rounded-md bg-transparent px-3 py-2.5 text-[13.5px] text-gray-800 placeholder:text-gray-400 focus:outline-none dark:text-gray-100 dark:placeholder:text-gray-500"
           />
         </label>
-        <div className="flex items-center justify-between border-t border-gray-100 px-2 py-1.5">
+        <div className="flex items-center justify-between border-t border-gray-100 px-2 py-1.5 dark:border-gray-700">
           <div className="flex items-center gap-0.5">
             <IconButton ariaLabel="Attach file" size="sm">
               <Icon name="paperclip" className="size-4" />
@@ -104,23 +104,23 @@ export function Composer({
           <button
             type="submit"
             disabled={!draft.trim()}
-            className="inline-flex h-8 items-center gap-1.5 rounded-md bg-gray-900 px-3.5 text-[12.5px] font-medium text-white transition hover:bg-gray-800 disabled:cursor-not-allowed disabled:opacity-50"
+            className="inline-flex h-8 items-center gap-1.5 rounded-md bg-gray-900 px-3.5 text-[12.5px] font-medium text-white transition hover:bg-gray-800 disabled:cursor-not-allowed disabled:opacity-50 dark:bg-white dark:text-gray-900 dark:hover:bg-gray-100"
           >
             {tab === "note" ? "Save note" : "Send"}
             <Icon name="send" className="size-3.5" />
           </button>
         </div>
       </div>
-      <p className="mt-1.5 pl-1 text-[10.5px] text-gray-400">
-        <kbd className="rounded border border-gray-200 bg-gray-50 px-1 font-mono text-[10px]">
+      <p className="mt-1.5 pl-1 text-[10.5px] text-gray-400 dark:text-gray-500">
+        <kbd className="rounded border border-gray-200 bg-gray-50 px-1 font-mono text-[10px] dark:border-gray-700 dark:bg-gray-800 dark:text-gray-300">
           Enter
         </kbd>{" "}
         to send ·{" "}
-        <kbd className="rounded border border-gray-200 bg-gray-50 px-1 font-mono text-[10px]">
+        <kbd className="rounded border border-gray-200 bg-gray-50 px-1 font-mono text-[10px] dark:border-gray-700 dark:bg-gray-800 dark:text-gray-300">
           Shift
         </kbd>{" "}
         +{" "}
-        <kbd className="rounded border border-gray-200 bg-gray-50 px-1 font-mono text-[10px]">
+        <kbd className="rounded border border-gray-200 bg-gray-50 px-1 font-mono text-[10px] dark:border-gray-700 dark:bg-gray-800 dark:text-gray-300">
           Enter
         </kbd>{" "}
         for a new line

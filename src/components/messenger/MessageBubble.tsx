@@ -46,7 +46,7 @@ export function MessageBubble({
           <span className="size-8 shrink-0" aria-hidden="true" />
         )}
         <div className="flex max-w-[72%] flex-col gap-1">
-          <div className="rounded-2xl rounded-tl-md bg-sky-50 px-4 py-2.5 text-[13.5px] leading-relaxed text-gray-800">
+          <div className="rounded-2xl rounded-tl-md bg-sky-50 px-4 py-2.5 text-[13.5px] leading-relaxed text-gray-800 dark:bg-sky-500/15 dark:text-gray-100">
             {message.body.split("\n").map((line, idx) => (
               <span key={idx} className="block">
                 {line}
@@ -54,7 +54,7 @@ export function MessageBubble({
             ))}
           </div>
           {(showAvatar || seenBy) && (
-            <span className="flex items-center gap-1 pl-1 text-[11px] text-gray-400">
+            <span className="flex items-center gap-1 pl-1 text-[11px] text-gray-400 dark:text-gray-500">
               {message.timeLabel}
               {seenBy && <SeenAvatar seenBy={seenBy} />}
             </span>
@@ -67,17 +67,17 @@ export function MessageBubble({
     <div className="flex items-end justify-end gap-2">
       <div className="flex max-w-[72%] flex-col items-end gap-1">
         {showSenderLabel && (
-          <span className="pr-1 text-[11.5px] font-medium text-gray-600">
+          <span className="pr-1 text-[11.5px] font-medium text-gray-600 dark:text-gray-300">
             {message.senderName}
           </span>
         )}
-        <div className="rounded-2xl rounded-tr-md border border-gray-200 bg-white px-4 py-2.5 text-[13.5px] leading-relaxed text-gray-800 shadow-theme-xs">
+        <div className="rounded-2xl rounded-tr-md border border-gray-200 bg-white px-4 py-2.5 text-[13.5px] leading-relaxed text-gray-800 shadow-theme-xs dark:border-gray-700 dark:bg-gray-800 dark:text-gray-100">
           {message.body.split("\n").map((line, idx) => (
             <span key={idx} className="block">
               {line}
             </span>
           ))}
-          <span className="mt-1 flex items-center justify-end gap-1 text-[11px] text-gray-400">
+          <span className="mt-1 flex items-center justify-end gap-1 text-[11px] text-gray-400 dark:text-gray-500">
             {message.timeLabel}
             {message.seenByCustomer && (
               <Icon name="check-double" className="size-3.5 text-brand-500" />
@@ -107,7 +107,7 @@ export function SeenIndicator({ item }: { item: SeenItem }) {
         title={`Seen by ${item.actorName} · ${item.seenAtLabel}`}
       >
         <Avatar size="xs" initials={item.actorInitials} color={item.actorColor} />
-        <span className="text-[10.5px] font-medium text-gray-500">{item.label}</span>
+        <span className="text-[10.5px] font-medium text-gray-500 dark:text-gray-400">{item.label}</span>
         <span
           role="tooltip"
           className="pointer-events-none absolute bottom-full right-0 z-20 mb-1.5 hidden whitespace-nowrap rounded-md bg-gray-900 px-2 py-1 text-[10.5px] font-medium text-white shadow-lg group-hover/seen:block"
@@ -128,17 +128,17 @@ export function PrivateNoteBubble({
     <div className="flex items-end justify-end gap-2">
       <div className="flex max-w-[72%] flex-col items-end gap-1">
         {showSenderLabel && (
-          <span className="pr-1 text-[11.5px] font-medium text-amber-700">
+          <span className="pr-1 text-[11.5px] font-medium text-amber-700 dark:text-amber-300">
             {message.senderName} · Private note
           </span>
         )}
-        <div className="rounded-2xl rounded-tr-md border border-amber-200 bg-amber-50 px-4 py-2.5 text-[13.5px] leading-relaxed text-amber-900">
+        <div className="rounded-2xl rounded-tr-md border border-amber-200 bg-amber-50 px-4 py-2.5 text-[13.5px] leading-relaxed text-amber-900 dark:border-amber-500/30 dark:bg-amber-500/10 dark:text-amber-100">
           {message.body.split("\n").map((line, idx) => (
             <span key={idx} className="block">
               {line}
             </span>
           ))}
-          <span className="mt-1 flex items-center justify-end gap-1 text-[11px] text-amber-600">
+          <span className="mt-1 flex items-center justify-end gap-1 text-[11px] text-amber-600 dark:text-amber-300/70">
             {message.timeLabel}
           </span>
         </div>

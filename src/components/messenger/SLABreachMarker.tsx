@@ -8,7 +8,7 @@ export function SLABreachMarker({ event }: { event: SlaBreachEvent }) {
       : "SLA resolution breached";
   return (
     <div className="flex items-center justify-center py-1">
-      <span className="inline-flex items-center gap-1.5 rounded-full bg-rose-50 px-2.5 py-1 text-[11.5px] text-rose-600">
+      <span className="inline-flex items-center gap-1.5 rounded-full bg-rose-50 px-2.5 py-1 text-[11.5px] text-rose-600 dark:bg-rose-500/10 dark:text-rose-300">
         <Icon name="clock" className="size-3.5" />
         <span className="font-semibold">&quot;{event.policy}&quot;</span>
         <span className="font-medium">{label}</span>
