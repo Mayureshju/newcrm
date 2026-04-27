@@ -1,0 +1,224 @@
+- generic [ref=e3]:
+  - complementary [ref=e4]:
+    - link "Home" [ref=e6] [cursor=pointer]:
+      - /url: /
+      - img "Logo" [ref=e7]
+    - navigation [ref=e12]:
+      - generic [ref=e14]:
+        - heading "Menu" [level=2] [ref=e15]
+        - list [ref=e16]:
+          - listitem [ref=e17]:
+            - link "Dashboard" [ref=e18] [cursor=pointer]:
+              - /url: /
+              - img [ref=e20]
+              - generic [ref=e22]: Dashboard
+          - listitem [ref=e23]:
+            - link "Calendar" [ref=e24] [cursor=pointer]:
+              - /url: /calendar
+              - img [ref=e26]
+              - generic [ref=e28]: Calendar
+          - listitem [ref=e29]:
+            - link "Messenger" [ref=e30] [cursor=pointer]:
+              - /url: /messenger
+              - img [ref=e32]
+              - generic [ref=e34]: Messenger
+          - listitem [ref=e35]:
+            - link "Leads" [ref=e36] [cursor=pointer]:
+              - /url: /leads
+              - img [ref=e38]
+              - generic [ref=e40]: Leads
+          - listitem [ref=e41]:
+            - link "Support Tickets" [ref=e42] [cursor=pointer]:
+              - /url: /tickets
+              - img [ref=e44]
+              - generic [ref=e46]: Support Tickets
+          - listitem [ref=e47]:
+            - link "User Profile" [ref=e48] [cursor=pointer]:
+              - /url: /profile
+              - img [ref=e50]
+              - generic [ref=e52]: User Profile
+  - generic [ref=e55]:
+    - generic [ref=e56]:
+      - generic [ref=e57]:
+        - button "All leads" [ref=e58] [cursor=pointer]:
+          - img [ref=e59]
+          - text: All leads
+        - generic [ref=e62]:
+          - generic [ref=e63]:
+            - generic [ref=e64]: "#2086"
+            - generic [ref=e66]: Created Yesterday, 14:10
+            - generic [ref=e67]: ·
+            - generic [ref=e68]: Last activity Today, 07:50
+          - heading "Rahul Iyer · Iyer Trading Co" [level=1] [ref=e69]:
+            - text: Rahul Iyer
+            - generic [ref=e70]: · Iyer Trading Co
+          - generic [ref=e71]:
+            - generic [ref=e72]: Contacted
+            - generic [ref=e74]: Meta · Welcome50_Apr
+            - generic [ref=e75]: SLA On track
+      - generic [ref=e78]:
+        - generic [ref=e79]:
+          - generic [ref=e80]:
+            - generic [ref=e81]:
+              - paragraph [ref=e82]: Source
+              - paragraph [ref=e83]: Meta
+            - generic [ref=e84]:
+              - paragraph [ref=e85]: Medium
+              - paragraph [ref=e86]: Social
+            - generic [ref=e87]:
+              - paragraph [ref=e88]: Campaign
+              - paragraph [ref=e89]: Welcome50_Apr
+          - generic [ref=e90]:
+            - generic [ref=e92]: Lead captured from Meta (Welcome50_Apr). · Yesterday, 14:10
+            - generic [ref=e94]:
+              - generic [ref=e95]: DS
+              - generic [ref=e96]:
+                - generic [ref=e97]:
+                  - paragraph [ref=e98]: Devansh Shah
+                  - generic [ref=e99]: Call
+                  - generic [ref=e100]: · 6m 12s
+                  - generic [ref=e101]: Today, 07:50
+                - paragraph [ref=e102]: Spoke for 6 minutes. Lead asked for the family-plan brochure and weekly menu PDF.
+            - generic [ref=e104]: Stage auto-updated to Contacted. · Today, 07:51
+        - generic [ref=e105]:
+          - generic [ref=e107]:
+            - heading "Set Lead Outcome" [level=3] [ref=e108]
+            - paragraph [ref=e109]: Agents only set the final disposition. Intermediate stages (Contacted, Qualified) are handled automatically by the system.
+          - generic [ref=e110]:
+            - generic [ref=e111]:
+              - generic [ref=e112]: Disposition
+              - generic [ref=e113]:
+                - button "Converted" [ref=e114] [cursor=pointer]
+                - button "Not Interested" [ref=e115] [cursor=pointer]
+                - button "Follow-up Scheduled" [ref=e116] [cursor=pointer]
+                - button "Unreachable" [ref=e117] [cursor=pointer]
+                - button "Junk" [ref=e118] [cursor=pointer]
+            - generic [ref=e119]:
+              - generic [ref=e120]: Outcome notes
+              - textbox "Capture context for this outcome — pricing objections, follow-up date, why disqualified, etc." [ref=e121]
+            - generic [ref=e122]:
+              - paragraph [ref=e123]: Submitting will auto-close the lead and append a system event.
+              - button "Set outcome & close" [disabled] [ref=e124]:
+                - img [ref=e125]
+                - text: Set outcome & close
+      - generic [ref=e128]:
+        - generic [ref=e129]:
+          - button "Log call" [ref=e130] [cursor=pointer]
+          - button "Email" [ref=e131] [cursor=pointer]
+          - button "WhatsApp" [ref=e132] [cursor=pointer]
+          - button "Internal note" [ref=e133] [cursor=pointer]
+        - textbox "Summarise this call…" [ref=e134]
+        - generic [ref=e135]:
+          - generic [ref=e136]: ⌘ + Enter to log
+          - button "Save call log" [disabled] [ref=e137]
+    - complementary [ref=e138]:
+      - heading "Lead details" [level=3] [ref=e140]
+      - generic [ref=e141]:
+        - generic [ref=e142]:
+          - button "Contact" [ref=e143] [cursor=pointer]:
+            - generic [ref=e144]: Contact
+            - img [ref=e145]
+          - generic [ref=e148]:
+            - generic [ref=e149]: RI
+            - generic [ref=e150]:
+              - paragraph [ref=e151]: Rahul Iyer
+              - paragraph [ref=e152]: Iyer Trading Co
+              - paragraph [ref=e153]: rahul.iyer@example.com
+              - paragraph [ref=e154]: +91 99876 45712
+              - paragraph [ref=e155]: Mumbai
+        - generic [ref=e156]:
+          - button "People & Team" [ref=e157] [cursor=pointer]:
+            - generic [ref=e158]: People & Team
+            - img [ref=e159]
+          - generic [ref=e162]:
+            - generic [ref=e163]:
+              - generic [ref=e164]: Owner
+              - generic [ref=e165]:
+                - combobox "Owner" [ref=e166]:
+                  - option "Aarav Mehta — Senior Sales Agent"
+                  - option "Riya Kapoor — Sales Lead"
+                  - option "Devansh Shah — Sales Agent" [selected]
+                  - option "Priya Nair — Field Sales"
+                  - option "Karan Joshi — Enterprise AE"
+                - img
+            - generic [ref=e167]:
+              - generic [ref=e168]: Team
+              - generic [ref=e169]:
+                - combobox "Team" [ref=e170]:
+                  - option "Inside Sales" [selected]
+                  - option "Field Sales"
+                  - option "Marketing"
+                  - option "Subscriptions"
+                  - option "Enterprise"
+                - img
+            - generic [ref=e171]:
+              - paragraph [ref=e172]: Estimated value
+              - paragraph [ref=e173]: ₹9,500
+        - generic [ref=e174]:
+          - button "UTM Attribution" [ref=e175] [cursor=pointer]:
+            - generic [ref=e176]: UTM Attribution
+            - img [ref=e177]
+          - generic [ref=e180]:
+            - generic [ref=e181]:
+              - generic [ref=e182]: Source
+              - generic [ref=e183]: Meta
+            - generic [ref=e184]:
+              - generic [ref=e185]: Medium
+              - generic [ref=e186]: Social
+            - generic [ref=e187]:
+              - generic [ref=e188]: Campaign
+              - generic [ref=e189]: Welcome50_Apr
+            - paragraph [ref=e190]: Attribution captured via AppsFlyer at lead creation.
+        - generic [ref=e191]:
+          - button "Tasks" [ref=e192] [cursor=pointer]:
+            - generic [ref=e193]: Tasks
+            - img [ref=e194]
+          - list [ref=e197]:
+            - listitem [ref=e198]:
+              - button "Mark task done" [ref=e199] [cursor=pointer]:
+                - img [ref=e200]
+              - generic [ref=e202]:
+                - generic [ref=e203]:
+                  - paragraph [ref=e204]: Follow-up call
+                  - generic [ref=e205]: Auto
+                - generic [ref=e206]:
+                  - generic [ref=e207]: Tomorrow, 10:00
+                  - generic [ref=e208]: ·
+                  - generic [ref=e209]: Auto · Follow-up
+              - generic [ref=e210]: Pending
+        - generic [ref=e212]:
+          - button "SLA" [ref=e213] [cursor=pointer]:
+            - generic [ref=e214]: SLA
+            - img [ref=e215]
+          - generic [ref=e218]:
+            - generic [ref=e219]:
+              - paragraph [ref=e220]: Policy
+              - paragraph [ref=e221]: Standard SLA
+            - generic [ref=e222]:
+              - generic [ref=e223]:
+                - paragraph [ref=e224]: First contact
+                - paragraph [ref=e225]: Met in 17h 40m
+              - generic [ref=e226]: Met
+            - generic [ref=e228]:
+              - generic [ref=e229]:
+                - paragraph [ref=e230]: Closure
+                - paragraph [ref=e231]: Due in 2d 5h
+              - generic [ref=e232]: On track
+        - generic [ref=e234]:
+          - button "AI Score" [ref=e235] [cursor=pointer]:
+            - generic [ref=e236]: AI Score
+            - img [ref=e237]
+          - generic [ref=e240]:
+            - generic [ref=e241]:
+              - generic [ref=e242]: Needs Re-engagement
+              - generic [ref=e243]: Phase 2
+            - generic [ref=e245]:
+              - generic [ref=e246]: Interest
+              - generic [ref=e247]: "62"
+            - generic [ref=e251]:
+              - generic [ref=e252]: Conversion
+              - generic [ref=e253]: "48"
+            - paragraph [ref=e256]: Engaged on call but hesitated on pricing; share family-plan promo PDF.
+        - button "Tags" [ref=e258] [cursor=pointer]:
+          - generic [ref=e259]: Tags
+          - img [ref=e260]

@@ -1,0 +1,216 @@
+- generic [ref=e3]:
+  - complementary [ref=e4]:
+    - link "Home" [ref=e6] [cursor=pointer]:
+      - /url: /
+      - img "Logo" [ref=e7]
+    - navigation [ref=e12]:
+      - generic [ref=e14]:
+        - heading "Menu" [level=2] [ref=e15]
+        - list [ref=e16]:
+          - listitem [ref=e17]:
+            - link "Dashboard" [ref=e18] [cursor=pointer]:
+              - /url: /
+              - img [ref=e20]
+              - generic [ref=e22]: Dashboard
+          - listitem [ref=e23]:
+            - link "Calendar" [ref=e24] [cursor=pointer]:
+              - /url: /calendar
+              - img [ref=e26]
+              - generic [ref=e28]: Calendar
+          - listitem [ref=e29]:
+            - link "Messenger" [ref=e30] [cursor=pointer]:
+              - /url: /messenger
+              - img [ref=e32]
+              - generic [ref=e34]: Messenger
+          - listitem [ref=e35]:
+            - link "Leads" [ref=e36] [cursor=pointer]:
+              - /url: /leads
+              - img [ref=e38]
+              - generic [ref=e40]: Leads
+          - listitem [ref=e41]:
+            - link "Support Tickets" [ref=e42] [cursor=pointer]:
+              - /url: /tickets
+              - img [ref=e44]
+              - generic [ref=e46]: Support Tickets
+          - listitem [ref=e47]:
+            - link "User Profile" [ref=e48] [cursor=pointer]:
+              - /url: /profile
+              - img [ref=e50]
+              - generic [ref=e52]: User Profile
+  - generic [ref=e55]:
+    - generic [ref=e56]:
+      - generic [ref=e57]:
+        - button "All leads" [ref=e58] [cursor=pointer]:
+          - img [ref=e59]
+          - text: All leads
+        - generic [ref=e62]:
+          - generic [ref=e63]:
+            - generic [ref=e64]: "#2083"
+            - generic [ref=e66]: Created Apr 20
+            - generic [ref=e67]: ·
+            - generic [ref=e68]: Last activity Apr 24, 15:30
+          - heading "Saanvi Gupta" [level=1] [ref=e69]
+          - generic [ref=e70]:
+            - generic [ref=e71]: Closed
+            - generic [ref=e73]: Converted
+            - generic [ref=e74]: Organic · Direct_Search
+            - generic [ref=e75]: SLA Met
+      - generic [ref=e78]:
+        - generic [ref=e79]:
+          - generic [ref=e80]:
+            - generic [ref=e81]:
+              - paragraph [ref=e82]: Source
+              - paragraph [ref=e83]: Organic
+            - generic [ref=e84]:
+              - paragraph [ref=e85]: Medium
+              - paragraph [ref=e86]: Organic
+            - generic [ref=e87]:
+              - paragraph [ref=e88]: Campaign
+              - paragraph [ref=e89]: Direct_Search
+          - generic [ref=e90]:
+            - generic [ref=e92]:
+              - generic [ref=e93]: RK
+              - generic [ref=e94]:
+                - generic [ref=e95]:
+                  - paragraph [ref=e96]: Riya Kapoor
+                  - generic [ref=e97]: Call
+                  - generic [ref=e98]: · 14m 03s
+                  - generic [ref=e99]: Apr 22, 11:30
+                - paragraph [ref=e100]: Discovery + pricing call. Lead confirmed family-plan subscription.
+            - generic [ref=e102]:
+              - generic [ref=e103]: RK
+              - generic [ref=e104]:
+                - generic [ref=e105]:
+                  - paragraph [ref=e106]: Riya Kapoor
+                  - generic [ref=e107]: Email
+                  - generic [ref=e108]: Apr 23, 09:15
+                - paragraph [ref=e109]: Sent the subscription link and onboarding checklist.
+            - generic [ref=e111]: Disposition set to Converted. Stage auto-updated to Closed. · Apr 24, 15:30
+        - generic [ref=e112]:
+          - generic [ref=e113]:
+            - generic [ref=e114]:
+              - heading "Set Lead Outcome" [level=3] [ref=e115]
+              - paragraph [ref=e116]: Agents only set the final disposition. Intermediate stages (Contacted, Qualified) are handled automatically by the system.
+            - generic [ref=e117]: "Current: Converted"
+          - generic [ref=e118]:
+            - generic [ref=e119]:
+              - generic [ref=e120]: Disposition
+              - generic [ref=e121]:
+                - button "Converted" [disabled] [ref=e122]
+                - button "Not Interested" [disabled] [ref=e123]
+                - button "Follow-up Scheduled" [disabled] [ref=e124]
+                - button "Unreachable" [disabled] [ref=e125]
+                - button "Junk" [disabled] [ref=e126]
+            - generic [ref=e127]:
+              - generic [ref=e128]: Outcome notes
+              - textbox "Capture context for this outcome — pricing objections, follow-up date, why disqualified, etc." [disabled] [ref=e129]: Subscribed to family-plan (12 weeks). Welcome kit dispatched, billing on auto-renew.
+            - generic [ref=e130]:
+              - paragraph [ref=e131]: This lead is closed.
+              - button "Set outcome & close" [disabled] [ref=e132]:
+                - img [ref=e133]
+                - text: Set outcome & close
+      - generic [ref=e136]:
+        - generic [ref=e137]:
+          - button "Log call" [ref=e138] [cursor=pointer]
+          - button "Email" [ref=e139] [cursor=pointer]
+          - button "WhatsApp" [ref=e140] [cursor=pointer]
+          - button "Internal note" [ref=e141] [cursor=pointer]
+        - textbox "Summarise this call…" [ref=e142]
+        - generic [ref=e143]:
+          - generic [ref=e144]: ⌘ + Enter to log
+          - button "Save call log" [disabled] [ref=e145]
+    - complementary [ref=e146]:
+      - heading "Lead details" [level=3] [ref=e148]
+      - generic [ref=e149]:
+        - generic [ref=e150]:
+          - button "Contact" [ref=e151] [cursor=pointer]:
+            - generic [ref=e152]: Contact
+            - img [ref=e153]
+          - generic [ref=e156]:
+            - generic [ref=e157]: SG
+            - generic [ref=e158]:
+              - paragraph [ref=e159]: Saanvi Gupta
+              - paragraph [ref=e160]: saanvi.g@example.com
+              - paragraph [ref=e161]: +91 90909 12121
+              - paragraph [ref=e162]: Delhi
+        - generic [ref=e163]:
+          - button "People & Team" [ref=e164] [cursor=pointer]:
+            - generic [ref=e165]: People & Team
+            - img [ref=e166]
+          - generic [ref=e169]:
+            - generic [ref=e170]:
+              - generic [ref=e171]: Owner
+              - generic [ref=e172]:
+                - combobox "Owner" [ref=e173]:
+                  - option "Aarav Mehta — Senior Sales Agent"
+                  - option "Riya Kapoor — Sales Lead" [selected]
+                  - option "Devansh Shah — Sales Agent"
+                  - option "Priya Nair — Field Sales"
+                  - option "Karan Joshi — Enterprise AE"
+                - img
+            - generic [ref=e174]:
+              - generic [ref=e175]: Team
+              - generic [ref=e176]:
+                - combobox "Team" [ref=e177]:
+                  - option "Inside Sales" [selected]
+                  - option "Field Sales"
+                  - option "Marketing"
+                  - option "Subscriptions"
+                  - option "Enterprise"
+                - img
+            - generic [ref=e178]:
+              - paragraph [ref=e179]: Estimated value
+              - paragraph [ref=e180]: ₹36,000
+        - generic [ref=e181]:
+          - button "UTM Attribution" [ref=e182] [cursor=pointer]:
+            - generic [ref=e183]: UTM Attribution
+            - img [ref=e184]
+          - generic [ref=e187]:
+            - generic [ref=e188]:
+              - generic [ref=e189]: Source
+              - generic [ref=e190]: Organic
+            - generic [ref=e191]:
+              - generic [ref=e192]: Medium
+              - generic [ref=e193]: Organic
+            - generic [ref=e194]:
+              - generic [ref=e195]: Campaign
+              - generic [ref=e196]: Direct_Search
+            - paragraph [ref=e197]: Attribution captured via AppsFlyer at lead creation.
+        - generic [ref=e198]:
+          - button "Tasks" [ref=e199] [cursor=pointer]:
+            - generic [ref=e200]: Tasks
+            - img [ref=e201]
+          - list [ref=e204]:
+            - listitem [ref=e205]:
+              - button "Mark task pending" [ref=e206] [cursor=pointer]:
+                - img [ref=e207]
+              - generic [ref=e209]:
+                - generic [ref=e210]:
+                  - paragraph [ref=e211]: Send welcome email
+                  - generic [ref=e212]: Auto
+                - generic [ref=e213]:
+                  - generic [ref=e214]: Apr 24, 16:00
+                  - generic [ref=e215]: ·
+                  - generic [ref=e216]: Auto · Follow-up
+              - generic [ref=e217]: Done
+        - generic [ref=e219]:
+          - button "SLA" [ref=e220] [cursor=pointer]:
+            - generic [ref=e221]: SLA
+            - img [ref=e222]
+          - generic [ref=e225]:
+            - generic [ref=e226]:
+              - paragraph [ref=e227]: Policy
+              - paragraph [ref=e228]: Standard SLA
+            - generic [ref=e229]:
+              - generic [ref=e230]:
+                - paragraph [ref=e231]: First contact
+                - paragraph [ref=e232]: Met in 1h 5m
+              - generic [ref=e233]: Met
+            - generic [ref=e235]:
+              - generic [ref=e236]:
+                - paragraph [ref=e237]: Closure
+                - paragraph [ref=e238]: Closed 3d early
+              - generic [ref=e239]: Met
+        - button "Tags" [ref=e242] [cursor=pointer]:
+          - generic [ref=e243]: Tags
+          - img [ref=e244]

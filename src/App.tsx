@@ -16,6 +16,10 @@ import BasicTables from "./pages/Tables/BasicTables";
 import FormElements from "./pages/Forms/FormElements";
 import Blank from "./pages/Blank";
 import Messenger from "./pages/Messenger";
+import Tickets from "./pages/Tickets/Tickets";
+import TicketDetail from "./pages/Tickets/TicketDetail";
+import Leads from "./pages/Leads/Leads";
+import LeadDetail from "./pages/Leads/LeadDetail";
 import AppLayout from "./layout/AppLayout";
 import { ScrollToTop } from "./components/common/ScrollToTop";
 import Home from "./pages/Dashboard/Home";
@@ -34,6 +38,10 @@ export default function App() {
             <Route path="/profile" element={<UserProfiles />} />
             <Route path="/calendar" element={<Calendar />} />
             <Route path="/messenger" element={<Messenger />} />
+            <Route path="/tickets" element={<Tickets />} />
+            <Route path="/tickets/:ticketId" element={<TicketDetail />} />
+            <Route path="/leads" element={<Leads />} />
+            <Route path="/leads/:leadId" element={<LeadDetail />} />
             <Route path="/blank" element={<Blank />} />
 
             {/* Forms */}

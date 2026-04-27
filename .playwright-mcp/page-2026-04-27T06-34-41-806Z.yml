@@ -1,0 +1,414 @@
+- generic [ref=e3]:
+  - complementary [ref=e4]:
+    - link "Home" [ref=e6] [cursor=pointer]:
+      - /url: /
+      - img "Logo" [ref=e7]
+    - navigation [ref=e12]:
+      - generic [ref=e14]:
+        - heading "Menu" [level=2] [ref=e15]
+        - list [ref=e16]:
+          - listitem [ref=e17]:
+            - link "Dashboard" [ref=e18] [cursor=pointer]:
+              - /url: /
+              - img [ref=e20]
+              - generic [ref=e22]: Dashboard
+          - listitem [ref=e23]:
+            - link "Calendar" [ref=e24] [cursor=pointer]:
+              - /url: /calendar
+              - img [ref=e26]
+              - generic [ref=e28]: Calendar
+          - listitem [ref=e29]:
+            - link "Messenger" [ref=e30] [cursor=pointer]:
+              - /url: /messenger
+              - img [ref=e32]
+              - generic [ref=e34]: Messenger
+          - listitem [ref=e35]:
+            - link "Leads" [ref=e36] [cursor=pointer]:
+              - /url: /leads
+              - img [ref=e38]
+              - generic [ref=e40]: Leads
+          - listitem [ref=e41]:
+            - link "Support Tickets" [ref=e42] [cursor=pointer]:
+              - /url: /tickets
+              - img [ref=e44]
+              - generic [ref=e46]: Support Tickets
+          - listitem [ref=e47]:
+            - link "User Profile" [ref=e48] [cursor=pointer]:
+              - /url: /profile
+              - img [ref=e50]
+              - generic [ref=e52]: User Profile
+  - generic [ref=e53]:
+    - banner [ref=e54]:
+      - generic [ref=e55]:
+        - generic [ref=e56]:
+          - button "Toggle Sidebar" [ref=e57] [cursor=pointer]:
+            - img [ref=e58]
+          - generic [ref=e62]:
+            - generic:
+              - img
+            - textbox "Search or type command..." [ref=e63]
+            - button "⌘ K" [ref=e64] [cursor=pointer]:
+              - generic [ref=e65]: ⌘
+              - generic [ref=e66]: K
+        - generic [ref=e67]:
+          - generic [ref=e68]:
+            - button [ref=e69] [cursor=pointer]:
+              - img [ref=e70]
+            - button [ref=e73] [cursor=pointer]:
+              - img [ref=e76]
+          - button "User Musharof" [ref=e79] [cursor=pointer]:
+            - img "User" [ref=e81]
+            - generic [ref=e82]: Musharof
+            - img [ref=e83]
+    - generic [ref=e86]:
+      - banner [ref=e87]:
+        - generic [ref=e88]:
+          - heading "Leads" [level=1] [ref=e89]
+          - paragraph [ref=e90]: Capture, qualify, and convert leads with SLA-driven automation.
+        - generic [ref=e91]:
+          - link "Open in Insight BI" [ref=e92] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e93]
+            - text: Open in Insight BI
+          - button "New lead" [ref=e95] [cursor=pointer]:
+            - img [ref=e96]
+            - text: New lead
+      - generic [ref=e98]:
+        - generic [ref=e99]:
+          - img [ref=e101]
+          - generic [ref=e106]:
+            - generic [ref=e107]:
+              - text: Total Leads
+              - heading "8" [level=4] [ref=e108]
+            - generic [ref=e109]: +8% wk
+        - generic [ref=e110]:
+          - img [ref=e112]
+          - generic [ref=e114]:
+            - generic [ref=e115]:
+              - text: New
+              - heading "2" [level=4] [ref=e116]
+            - generic [ref=e117]: 25% of total
+        - generic [ref=e118]:
+          - img [ref=e120]
+          - generic [ref=e122]:
+            - generic [ref=e123]:
+              - text: In Pipeline
+              - heading "4" [level=4] [ref=e124]
+            - generic [ref=e125]: 50% engaged
+        - generic [ref=e126]:
+          - img [ref=e128]
+          - generic [ref=e131]:
+            - generic [ref=e132]:
+              - text: Converted
+              - heading "1" [level=4] [ref=e133]
+            - generic [ref=e134]: 13% rate
+        - generic [ref=e135]:
+          - img [ref=e137]
+          - generic [ref=e140]:
+            - generic [ref=e141]:
+              - text: SLA Breached
+              - heading "1" [level=4] [ref=e142]
+            - generic [ref=e143]: Action needed
+      - generic [ref=e144]:
+        - generic [ref=e145]:
+          - generic [ref=e146]:
+            - heading "Pipeline by Stage" [level=3] [ref=e147]
+            - generic [ref=e148]: live
+          - generic [ref=e549]:
+            - img [ref=e550]:
+              - generic [ref=e552]:
+                - generic [ref=e565]:
+                  - generic "New" [ref=e566]
+                  - generic "Assigned" [ref=e567]
+                  - generic "Contacted" [ref=e568]
+                  - generic "Qualified" [ref=e569]
+                  - generic "Proposal" [ref=e570]
+                  - generic "Closed" [ref=e571]
+                - generic [ref=e573]:
+                  - generic "2.0" [ref=e574]
+                  - generic "1.5" [ref=e575]
+                  - generic "1.0" [ref=e576]
+                  - generic "0.5" [ref=e577]
+                  - generic "0.0" [ref=e578]
+            - generic: ●
+        - generic [ref=e175]:
+          - generic [ref=e176]:
+            - heading "Source Mix (UTM)" [level=3] [ref=e177]
+            - generic [ref=e178]: via AppsFlyer
+          - generic [ref=e579]:
+            - img [ref=e580]:
+              - generic [ref=e582]:
+                - generic [ref=e583] [cursor=pointer]:
+                  - generic [ref=e584]:
+                    - img
+                  - generic [ref=e585]: Google
+                - generic [ref=e586] [cursor=pointer]:
+                  - generic [ref=e587]:
+                    - img
+                  - generic [ref=e588]: Meta
+                - generic [ref=e589] [cursor=pointer]:
+                  - generic [ref=e590]:
+                    - img
+                  - generic [ref=e591]: Referral
+                - generic [ref=e592] [cursor=pointer]:
+                  - generic [ref=e593]:
+                    - img
+                  - generic [ref=e594]: Organic
+                - generic [ref=e595] [cursor=pointer]:
+                  - generic [ref=e596]:
+                    - img
+                  - generic [ref=e597]: Email
+                - generic [ref=e598] [cursor=pointer]:
+                  - generic [ref=e599]:
+                    - img
+                  - generic [ref=e600]: WhatsApp
+                - generic [ref=e601] [cursor=pointer]:
+                  - generic [ref=e602]:
+                    - img
+                  - generic [ref=e603]: Manual
+              - generic [ref=e623]:
+                - generic: Sources
+                - generic: "8"
+            - generic: ● ● ● ● ● ● ●
+        - generic [ref=e213]:
+          - generic [ref=e214]:
+            - heading "Campaign Performance" [level=3] [ref=e215]
+            - generic [ref=e216]: total · converted
+          - generic [ref=e624]:
+            - img [ref=e625]:
+              - generic [ref=e627]:
+                - generic [ref=e628] [cursor=pointer]:
+                  - generic [ref=e629]:
+                    - img
+                  - generic [ref=e630]: Leads
+                - generic [ref=e631] [cursor=pointer]:
+                  - generic [ref=e632]:
+                    - img
+                  - generic [ref=e633]: Converted
+              - generic [ref=e634]:
+                - generic [ref=e650]:
+                  - generic "Spring_Family_2026" [ref=e651]
+                  - generic "Welcome50_Apr" [ref=e652]
+                  - generic "Customer_Referral_Q2" [ref=e653]
+                  - generic "B2B_Office_Lunch" [ref=e654]
+                  - generic "Direct_Search" [ref=e655]
+                  - generic "Inbound_Chat" [ref=e656]
+                  - generic "Q2_Enterprise_Newsletter" [ref=e657]
+                - generic [ref=e659]:
+                  - generic "2.5" [ref=e660]
+                  - generic "2.0" [ref=e661]
+                  - generic "1.5" [ref=e662]
+                  - generic "1.0" [ref=e663]
+                  - generic "0.5" [ref=e664]
+                  - generic "0.0" [ref=e665]
+            - generic: ● ●
+      - generic [ref=e253]:
+        - generic [ref=e254]:
+          - generic [ref=e255]:
+            - button "All 8" [ref=e256] [cursor=pointer]
+            - button "New 2" [ref=e257] [cursor=pointer]
+            - button "Active 4" [ref=e258] [cursor=pointer]
+            - button "Assigned to me 2" [ref=e259] [cursor=pointer]
+          - generic [ref=e260]:
+            - button "List" [ref=e261] [cursor=pointer]:
+              - img [ref=e262]
+              - text: List
+            - button "Kanban" [active] [ref=e264] [cursor=pointer]:
+              - img [ref=e265]
+              - text: Kanban
+        - generic [ref=e269]:
+          - generic [ref=e270]:
+            - img
+            - searchbox "Search leads, contacts, IDs…" [ref=e271]
+          - generic [ref=e272]:
+            - generic [ref=e273]:
+              - combobox [ref=e274]:
+                - option "All stages" [selected]
+                - option "New"
+                - option "Assigned"
+                - option "Contacted"
+                - option "Qualified"
+                - option "Proposal"
+                - option "Closed"
+              - img
+            - generic [ref=e275]:
+              - combobox [ref=e276]:
+                - option "All dispositions" [selected]
+                - option "Converted"
+                - option "Not Interested"
+                - option "Follow-up Scheduled"
+                - option "Unreachable"
+                - option "Junk"
+              - img
+            - generic [ref=e277]:
+              - combobox [ref=e278]:
+                - option "All sources" [selected]
+                - option "Google"
+                - option "Meta"
+                - option "Referral"
+                - option "Organic"
+                - option "Email"
+                - option "WhatsApp"
+                - option "Manual"
+              - img
+            - generic [ref=e279]:
+              - combobox [ref=e280]:
+                - option "All owners" [selected]
+                - option "Aarav Mehta"
+                - option "Riya Kapoor"
+                - option "Devansh Shah"
+                - option "Priya Nair"
+                - option "Karan Joshi"
+              - img
+            - button "Reset" [ref=e281] [cursor=pointer]
+        - generic [ref=e666]:
+          - generic [ref=e667]:
+            - generic [ref=e668]:
+              - generic [ref=e671]: New
+              - generic [ref=e672]: "1"
+            - link "#2087 On track AV Anika Verma Verma Foods Pvt Ltd Google AM Aarav ₹18,000" [ref=e674] [cursor=pointer]:
+              - /url: /leads/LD-2087
+              - generic [ref=e675]:
+                - generic [ref=e676]: "#2087"
+                - generic [ref=e677]: On track
+              - generic [ref=e679]:
+                - generic [ref=e680]: AV
+                - generic [ref=e681]:
+                  - paragraph [ref=e682]: Anika Verma
+                  - paragraph [ref=e683]: Verma Foods Pvt Ltd
+              - generic [ref=e685]: Google
+              - generic [ref=e686]:
+                - generic [ref=e687]:
+                  - generic [ref=e688]: AM
+                  - text: Aarav
+                - generic [ref=e689]: ₹18,000
+          - generic [ref=e690]:
+            - generic [ref=e691]:
+              - generic [ref=e694]: Assigned
+              - generic [ref=e695]: "1"
+            - link "#2084 At risk AR Aditya Roy Roy Hospitality Google AM Aarav ₹45,000" [ref=e697] [cursor=pointer]:
+              - /url: /leads/LD-2084
+              - generic [ref=e698]:
+                - generic [ref=e699]: "#2084"
+                - generic [ref=e700]: At risk
+              - generic [ref=e702]:
+                - generic [ref=e703]: AR
+                - generic [ref=e704]:
+                  - paragraph [ref=e705]: Aditya Roy
+                  - paragraph [ref=e706]: Roy Hospitality
+              - generic [ref=e708]: Google
+              - generic [ref=e709]:
+                - generic [ref=e710]:
+                  - generic [ref=e711]: AM
+                  - text: Aarav
+                - generic [ref=e712]: ₹45,000
+          - generic [ref=e713]:
+            - generic [ref=e714]:
+              - generic [ref=e717]: Contacted
+              - generic [ref=e718]: "2"
+            - generic [ref=e719]:
+              - link "#2086 On track RI Rahul Iyer Iyer Trading Co Meta DS Devansh ₹9,500" [ref=e720] [cursor=pointer]:
+                - /url: /leads/LD-2086
+                - generic [ref=e721]:
+                  - generic [ref=e722]: "#2086"
+                  - generic [ref=e723]: On track
+                - generic [ref=e725]:
+                  - generic [ref=e726]: RI
+                  - generic [ref=e727]:
+                    - paragraph [ref=e728]: Rahul Iyer
+                    - paragraph [ref=e729]: Iyer Trading Co
+                - generic [ref=e731]: Meta
+                - generic [ref=e732]:
+                  - generic [ref=e733]:
+                    - generic [ref=e734]: DS
+                    - text: Devansh
+                  - generic [ref=e735]: ₹9,500
+              - link "#2080 On track KB Karthik Bose Bose Tech Labs Email KJ Karan ₹1,20,000" [ref=e736] [cursor=pointer]:
+                - /url: /leads/LD-2080
+                - generic [ref=e737]:
+                  - generic [ref=e738]: "#2080"
+                  - generic [ref=e739]: On track
+                - generic [ref=e741]:
+                  - generic [ref=e742]: KB
+                  - generic [ref=e743]:
+                    - paragraph [ref=e744]: Karthik Bose
+                    - paragraph [ref=e745]: Bose Tech Labs
+                - generic [ref=e747]: Email
+                - generic [ref=e748]:
+                  - generic [ref=e749]:
+                    - generic [ref=e750]: KJ
+                    - text: Karan
+                  - generic [ref=e751]: ₹1,20,000
+          - generic [ref=e752]:
+            - generic [ref=e753]:
+              - generic [ref=e756]: Qualified
+              - generic [ref=e757]: "1"
+            - link "#2085 On track MN Meera Nair Referral RK Riya ₹24,000" [ref=e759] [cursor=pointer]:
+              - /url: /leads/LD-2085
+              - generic [ref=e760]:
+                - generic [ref=e761]: "#2085"
+                - generic [ref=e762]: On track
+              - generic [ref=e764]:
+                - generic [ref=e765]: MN
+                - paragraph [ref=e767]: Meera Nair
+              - generic [ref=e769]: Referral
+              - generic [ref=e770]:
+                - generic [ref=e771]:
+                  - generic [ref=e772]: RK
+                  - text: Riya
+                - generic [ref=e773]: ₹24,000
+          - generic [ref=e774]:
+            - generic [ref=e775]:
+              - generic [ref=e778]: Proposal
+              - generic [ref=e779]: "1"
+            - link "#2081 On track NP Nisha Pillai WhatsApp DS Devansh ₹28,000" [ref=e781] [cursor=pointer]:
+              - /url: /leads/LD-2081
+              - generic [ref=e782]:
+                - generic [ref=e783]: "#2081"
+                - generic [ref=e784]: On track
+              - generic [ref=e786]:
+                - generic [ref=e787]: NP
+                - paragraph [ref=e789]: Nisha Pillai
+              - generic [ref=e791]: WhatsApp
+              - generic [ref=e792]:
+                - generic [ref=e793]:
+                  - generic [ref=e794]: DS
+                  - text: Devansh
+                - generic [ref=e795]: ₹28,000
+          - generic [ref=e796]:
+            - generic [ref=e797]:
+              - generic [ref=e800]: Closed
+              - generic [ref=e801]: "2"
+            - generic [ref=e802]:
+              - link "#2083 Met SG Saanvi Gupta Organic Converted RK Riya ₹36,000" [ref=e803] [cursor=pointer]:
+                - /url: /leads/LD-2083
+                - generic [ref=e804]:
+                  - generic [ref=e805]: "#2083"
+                  - generic [ref=e806]: Met
+                - generic [ref=e808]:
+                  - generic [ref=e809]: SG
+                  - paragraph [ref=e811]: Saanvi Gupta
+                - generic [ref=e812]:
+                  - generic [ref=e813]: Organic
+                  - generic [ref=e814]: Converted
+                - generic [ref=e815]:
+                  - generic [ref=e816]:
+                    - generic [ref=e817]: RK
+                    - text: Riya
+                  - generic [ref=e818]: ₹36,000
+              - link "#2082 Met VS Vikram Sethi Sethi Wellness Meta Not Interested PN Priya" [ref=e819] [cursor=pointer]:
+                - /url: /leads/LD-2082
+                - generic [ref=e820]:
+                  - generic [ref=e821]: "#2082"
+                  - generic [ref=e822]: Met
+                - generic [ref=e824]:
+                  - generic [ref=e825]: VS
+                  - generic [ref=e826]:
+                    - paragraph [ref=e827]: Vikram Sethi
+                    - paragraph [ref=e828]: Sethi Wellness
+                - generic [ref=e829]:
+                  - generic [ref=e830]: Meta
+                  - generic [ref=e831]: Not Interested
+                - generic [ref=e833]:
+                  - generic [ref=e834]: PN
+                  - text: Priya

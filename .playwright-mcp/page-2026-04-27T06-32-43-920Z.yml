@@ -1,0 +1,215 @@
+- generic [ref=e3]:
+  - complementary [ref=e4]:
+    - link "Home" [ref=e6] [cursor=pointer]:
+      - /url: /
+      - img "Logo" [ref=e7]
+    - navigation [ref=e12]:
+      - generic [ref=e14]:
+        - heading "Menu" [level=2] [ref=e15]
+        - list [ref=e16]:
+          - listitem [ref=e17]:
+            - link "Dashboard" [ref=e18] [cursor=pointer]:
+              - /url: /
+              - img [ref=e20]
+              - generic [ref=e22]: Dashboard
+          - listitem [ref=e23]:
+            - link "Calendar" [ref=e24] [cursor=pointer]:
+              - /url: /calendar
+              - img [ref=e26]
+              - generic [ref=e28]: Calendar
+          - listitem [ref=e29]:
+            - link "Messenger" [ref=e30] [cursor=pointer]:
+              - /url: /messenger
+              - img [ref=e32]
+              - generic [ref=e34]: Messenger
+          - listitem [ref=e35]:
+            - link "Leads" [ref=e36] [cursor=pointer]:
+              - /url: /leads
+              - img [ref=e38]
+              - generic [ref=e40]: Leads
+          - listitem [ref=e41]:
+            - link "Support Tickets" [ref=e42] [cursor=pointer]:
+              - /url: /tickets
+              - img [ref=e44]
+              - generic [ref=e46]: Support Tickets
+          - listitem [ref=e47]:
+            - link "User Profile" [ref=e48] [cursor=pointer]:
+              - /url: /profile
+              - img [ref=e50]
+              - generic [ref=e52]: User Profile
+  - generic [ref=e55]:
+    - generic [ref=e56]:
+      - generic [ref=e57]:
+        - button "All leads" [ref=e58] [cursor=pointer]:
+          - img [ref=e59]
+          - text: All leads
+        - generic [ref=e62]:
+          - generic [ref=e63]:
+            - generic [ref=e64]: "#2087"
+            - generic [ref=e66]: Created Today, 08:30
+            - generic [ref=e67]: ·
+            - generic [ref=e68]: Last activity Just now
+          - heading "Anika Verma · Verma Foods Pvt Ltd" [level=1] [ref=e69]:
+            - text: Anika Verma
+            - generic [ref=e70]: · Verma Foods Pvt Ltd
+          - generic [ref=e71]:
+            - generic [ref=e72]: New
+            - generic [ref=e74]: Google · Spring_Family_2026
+            - generic [ref=e75]: SLA On track
+      - generic [ref=e78]:
+        - generic [ref=e79]:
+          - generic [ref=e80]:
+            - generic [ref=e81]:
+              - paragraph [ref=e82]: Source
+              - paragraph [ref=e83]: Google
+            - generic [ref=e84]:
+              - paragraph [ref=e85]: Medium
+              - paragraph [ref=e86]: CPC
+            - generic [ref=e87]:
+              - paragraph [ref=e88]: Campaign
+              - paragraph [ref=e89]: Spring_Family_2026
+          - generic [ref=e90]:
+            - generic [ref=e92]: Lead captured from Google CPC — campaign Spring_Family_2026 (via AppsFlyer). · Today, 08:30
+            - generic [ref=e94]: Auto-assigned to Aarav Mehta. Task ‘Contact lead within 1h’ created. · Today, 08:31
+        - generic [ref=e95]:
+          - generic [ref=e97]:
+            - heading "Set Lead Outcome" [level=3] [ref=e98]
+            - paragraph [ref=e99]: Agents only set the final disposition. Intermediate stages (Contacted, Qualified) are handled automatically by the system.
+          - generic [ref=e100]:
+            - generic [ref=e101]:
+              - generic [ref=e102]: Disposition
+              - generic [ref=e103]:
+                - button "Converted" [disabled] [ref=e104]
+                - button "Not Interested" [disabled] [ref=e105]
+                - button "Follow-up Scheduled" [disabled] [ref=e106]
+                - button "Unreachable" [disabled] [ref=e107]
+                - button "Junk" [disabled] [ref=e108]
+            - generic [ref=e109]:
+              - generic [ref=e110]: Outcome notes
+              - textbox "Capture context for this outcome — pricing objections, follow-up date, why disqualified, etc." [disabled] [ref=e111]
+            - generic [ref=e112]:
+              - paragraph [ref=e113]: Log at least one call, email, or WhatsApp before setting an outcome.
+              - button "Set outcome & close" [disabled] [ref=e114]:
+                - img [ref=e115]
+                - text: Set outcome & close
+      - generic [ref=e118]:
+        - generic [ref=e119]:
+          - button "Log call" [ref=e120] [cursor=pointer]
+          - button "Email" [ref=e121] [cursor=pointer]
+          - button "WhatsApp" [ref=e122] [cursor=pointer]
+          - button "Internal note" [ref=e123] [cursor=pointer]
+        - textbox "Summarise this call…" [ref=e124]
+        - generic [ref=e125]:
+          - generic [ref=e126]: ⌘ + Enter to log
+          - button "Save call log" [disabled] [ref=e127]
+    - complementary [ref=e128]:
+      - heading "Lead details" [level=3] [ref=e130]
+      - generic [ref=e131]:
+        - generic [ref=e132]:
+          - button "Contact" [ref=e133] [cursor=pointer]:
+            - generic [ref=e134]: Contact
+            - img [ref=e135]
+          - generic [ref=e138]:
+            - generic [ref=e139]: AV
+            - generic [ref=e140]:
+              - paragraph [ref=e141]: Anika Verma
+              - paragraph [ref=e142]: Verma Foods Pvt Ltd
+              - paragraph [ref=e143]: anika.verma@example.com
+              - paragraph [ref=e144]: +91 98456 12012
+              - paragraph [ref=e145]: Bengaluru
+        - generic [ref=e146]:
+          - button "People & Team" [ref=e147] [cursor=pointer]:
+            - generic [ref=e148]: People & Team
+            - img [ref=e149]
+          - generic [ref=e152]:
+            - generic [ref=e153]:
+              - generic [ref=e154]: Owner
+              - generic [ref=e155]:
+                - combobox "Owner" [ref=e156]:
+                  - option "Aarav Mehta — Senior Sales Agent" [selected]
+                  - option "Riya Kapoor — Sales Lead"
+                  - option "Devansh Shah — Sales Agent"
+                  - option "Priya Nair — Field Sales"
+                  - option "Karan Joshi — Enterprise AE"
+                - img
+            - generic [ref=e157]:
+              - generic [ref=e158]: Team
+              - generic [ref=e159]:
+                - combobox "Team" [ref=e160]:
+                  - option "Inside Sales" [selected]
+                  - option "Field Sales"
+                  - option "Marketing"
+                  - option "Subscriptions"
+                  - option "Enterprise"
+                - img
+            - generic [ref=e161]:
+              - paragraph [ref=e162]: Estimated value
+              - paragraph [ref=e163]: ₹18,000
+        - generic [ref=e164]:
+          - button "UTM Attribution" [ref=e165] [cursor=pointer]:
+            - generic [ref=e166]: UTM Attribution
+            - img [ref=e167]
+          - generic [ref=e170]:
+            - generic [ref=e171]:
+              - generic [ref=e172]: Source
+              - generic [ref=e173]: Google
+            - generic [ref=e174]:
+              - generic [ref=e175]: Medium
+              - generic [ref=e176]: CPC
+            - generic [ref=e177]:
+              - generic [ref=e178]: Campaign
+              - generic [ref=e179]: Spring_Family_2026
+            - paragraph [ref=e180]: Attribution captured via AppsFlyer at lead creation.
+        - generic [ref=e181]:
+          - button "Tasks" [ref=e182] [cursor=pointer]:
+            - generic [ref=e183]: Tasks
+            - img [ref=e184]
+          - list [ref=e187]:
+            - listitem [ref=e188]:
+              - button "Mark task done" [ref=e189] [cursor=pointer]:
+                - img [ref=e190]
+              - generic [ref=e192]:
+                - generic [ref=e193]:
+                  - paragraph [ref=e194]: Contact lead within 1h
+                  - generic [ref=e195]: Auto
+                - generic [ref=e196]:
+                  - generic [ref=e197]: Due in 22m
+                  - generic [ref=e198]: ·
+                  - generic [ref=e199]: Auto · Assignment
+              - generic [ref=e200]: Pending
+        - generic [ref=e202]:
+          - button "SLA" [ref=e203] [cursor=pointer]:
+            - generic [ref=e204]: SLA
+            - img [ref=e205]
+          - generic [ref=e208]:
+            - generic [ref=e209]:
+              - paragraph [ref=e210]: Policy
+              - paragraph [ref=e211]: Inbound SLA
+            - generic [ref=e212]:
+              - generic [ref=e213]:
+                - paragraph [ref=e214]: First contact
+                - paragraph [ref=e215]: Due in 22m
+              - generic [ref=e216]: On track
+            - generic [ref=e218]:
+              - generic [ref=e219]:
+                - paragraph [ref=e220]: Closure
+                - paragraph [ref=e221]: Due in 2d 22h
+              - generic [ref=e222]: On track
+        - generic [ref=e224]:
+          - button "AI Score" [ref=e225] [cursor=pointer]:
+            - generic [ref=e226]: AI Score
+            - img [ref=e227]
+          - generic [ref=e230]:
+            - generic [ref=e231]:
+              - generic [ref=e232]: High Potential
+              - generic [ref=e233]: Phase 2
+            - generic [ref=e235]:
+              - generic [ref=e236]: Interest
+              - generic [ref=e237]: "78"
+            - generic [ref=e241]:
+              - generic [ref=e242]: Conversion
+              - generic [ref=e243]: "64"
+            - paragraph [ref=e246]: Asked about delivery to a Tier-1 city, comfortable with family-plan pricing.
+        - button "Tags" [ref=e248] [cursor=pointer]:
+          - generic [ref=e249]: Tags
+          - img [ref=e250]

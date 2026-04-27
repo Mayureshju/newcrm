@@ -1,0 +1,504 @@
+- generic [ref=e3]:
+  - complementary [ref=e4]:
+    - link "Home" [ref=e6] [cursor=pointer]:
+      - /url: /
+      - img "Logo" [ref=e7]
+    - navigation [ref=e12]:
+      - generic [ref=e14]:
+        - heading "Menu" [level=2] [ref=e15]
+        - list [ref=e16]:
+          - listitem [ref=e17]:
+            - link "Dashboard" [ref=e18] [cursor=pointer]:
+              - /url: /
+              - img [ref=e20]
+              - generic [ref=e22]: Dashboard
+          - listitem [ref=e23]:
+            - link "Calendar" [ref=e24] [cursor=pointer]:
+              - /url: /calendar
+              - img [ref=e26]
+              - generic [ref=e28]: Calendar
+          - listitem [ref=e29]:
+            - link "Messenger" [ref=e30] [cursor=pointer]:
+              - /url: /messenger
+              - img [ref=e32]
+              - generic [ref=e34]: Messenger
+          - listitem [ref=e35]:
+            - link "Leads" [ref=e36] [cursor=pointer]:
+              - /url: /leads
+              - img [ref=e38]
+              - generic [ref=e40]: Leads
+          - listitem [ref=e41]:
+            - link "Support Tickets" [ref=e42] [cursor=pointer]:
+              - /url: /tickets
+              - img [ref=e44]
+              - generic [ref=e46]: Support Tickets
+          - listitem [ref=e47]:
+            - link "User Profile" [ref=e48] [cursor=pointer]:
+              - /url: /profile
+              - img [ref=e50]
+              - generic [ref=e52]: User Profile
+  - generic [ref=e53]:
+    - banner [ref=e54]:
+      - generic [ref=e55]:
+        - generic [ref=e56]:
+          - button "Toggle Sidebar" [ref=e57] [cursor=pointer]:
+            - img [ref=e58]
+          - generic [ref=e62]:
+            - generic:
+              - img
+            - textbox "Search or type command..." [ref=e63]
+            - button "⌘ K" [ref=e64] [cursor=pointer]:
+              - generic [ref=e65]: ⌘
+              - generic [ref=e66]: K
+        - generic [ref=e67]:
+          - generic [ref=e68]:
+            - button [ref=e69] [cursor=pointer]:
+              - img [ref=e70]
+            - button [ref=e73] [cursor=pointer]:
+              - img [ref=e76]
+          - button "User Musharof" [ref=e79] [cursor=pointer]:
+            - img "User" [ref=e81]
+            - generic [ref=e82]: Musharof
+            - img [ref=e83]
+    - generic [ref=e86]:
+      - banner [ref=e87]:
+        - generic [ref=e88]:
+          - heading "Leads" [level=1] [ref=e89]
+          - paragraph [ref=e90]: Capture, qualify, and convert leads with SLA-driven automation.
+        - generic [ref=e91]:
+          - link "Open in Insight BI" [ref=e92] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e93]
+            - text: Open in Insight BI
+          - button "New lead" [ref=e95] [cursor=pointer]:
+            - img [ref=e96]
+            - text: New lead
+      - generic [ref=e98]:
+        - generic [ref=e99]:
+          - img [ref=e101]
+          - generic [ref=e106]:
+            - generic [ref=e107]:
+              - text: Total Leads
+              - heading "8" [level=4] [ref=e108]
+            - generic [ref=e109]: +8% wk
+        - generic [ref=e110]:
+          - img [ref=e112]
+          - generic [ref=e114]:
+            - generic [ref=e115]:
+              - text: New
+              - heading "2" [level=4] [ref=e116]
+            - generic [ref=e117]: 25% of total
+        - generic [ref=e118]:
+          - img [ref=e120]
+          - generic [ref=e122]:
+            - generic [ref=e123]:
+              - text: In Pipeline
+              - heading "4" [level=4] [ref=e124]
+            - generic [ref=e125]: 50% engaged
+        - generic [ref=e126]:
+          - img [ref=e128]
+          - generic [ref=e131]:
+            - generic [ref=e132]:
+              - text: Converted
+              - heading "1" [level=4] [ref=e133]
+            - generic [ref=e134]: 13% rate
+        - generic [ref=e135]:
+          - img [ref=e137]
+          - generic [ref=e140]:
+            - generic [ref=e141]:
+              - text: SLA Breached
+              - heading "1" [level=4] [ref=e142]
+            - generic [ref=e143]: Action needed
+      - generic [ref=e144]:
+        - generic [ref=e145]:
+          - generic [ref=e146]:
+            - heading "Pipeline by Stage" [level=3] [ref=e147]
+            - generic [ref=e148]: live
+          - generic [ref=e150]:
+            - img [ref=e151]:
+              - generic [ref=e153]:
+                - generic [ref=e161]:
+                  - generic "New" [ref=e162]
+                  - generic "Assigned" [ref=e163]
+                  - generic "Contacted" [ref=e164]
+                  - generic "Qualified" [ref=e165]
+                  - generic "Proposal" [ref=e166]
+                  - generic "Closed" [ref=e167]
+                - generic [ref=e169]:
+                  - generic "2.0" [ref=e170]
+                  - generic "1.5" [ref=e171]
+                  - generic "1.0" [ref=e172]
+                  - generic "0.5" [ref=e173]
+                  - generic "0.0" [ref=e174]
+            - generic: ●
+        - generic [ref=e175]:
+          - generic [ref=e176]:
+            - heading "Source Mix (UTM)" [level=3] [ref=e177]
+            - generic [ref=e178]: via AppsFlyer
+          - generic [ref=e180]:
+            - img [ref=e181]:
+              - generic [ref=e183]:
+                - generic [ref=e184] [cursor=pointer]:
+                  - generic [ref=e185]:
+                    - img
+                  - generic [ref=e186]: Google
+                - generic [ref=e187] [cursor=pointer]:
+                  - generic [ref=e188]:
+                    - img
+                  - generic [ref=e189]: Meta
+                - generic [ref=e190] [cursor=pointer]:
+                  - generic [ref=e191]:
+                    - img
+                  - generic [ref=e192]: Referral
+                - generic [ref=e193] [cursor=pointer]:
+                  - generic [ref=e194]:
+                    - img
+                  - generic [ref=e195]: Organic
+                - generic [ref=e196] [cursor=pointer]:
+                  - generic [ref=e197]:
+                    - img
+                  - generic [ref=e198]: Email
+                - generic [ref=e199] [cursor=pointer]:
+                  - generic [ref=e200]:
+                    - img
+                  - generic [ref=e201]: WhatsApp
+                - generic [ref=e202] [cursor=pointer]:
+                  - generic [ref=e203]:
+                    - img
+                  - generic [ref=e204]: Manual
+              - generic [ref=e212]:
+                - generic: Sources
+                - generic: "8"
+            - generic: ● ● ● ● ● ● ●
+        - generic [ref=e213]:
+          - generic [ref=e214]:
+            - heading "Campaign Performance" [level=3] [ref=e215]
+            - generic [ref=e216]: total · converted
+          - generic [ref=e218]:
+            - img [ref=e219]:
+              - generic [ref=e221]:
+                - generic [ref=e222] [cursor=pointer]:
+                  - generic [ref=e223]:
+                    - img
+                  - generic [ref=e224]: Leads
+                - generic [ref=e225] [cursor=pointer]:
+                  - generic [ref=e226]:
+                    - img
+                  - generic [ref=e227]: Converted
+              - generic [ref=e228]:
+                - generic [ref=e237]:
+                  - generic "Spring_Family_2026" [ref=e238]
+                  - generic "Welcome50_Apr" [ref=e239]
+                  - generic "Customer_Referral_Q2" [ref=e240]
+                  - generic "B2B_Office_Lunch" [ref=e241]
+                  - generic "Direct_Search" [ref=e242]
+                  - generic "Inbound_Chat" [ref=e243]
+                  - generic "Q2_Enterprise_Newsletter" [ref=e244]
+                - generic [ref=e246]:
+                  - generic "2.5" [ref=e247]
+                  - generic "2.0" [ref=e248]
+                  - generic "1.5" [ref=e249]
+                  - generic "1.0" [ref=e250]
+                  - generic "0.5" [ref=e251]
+                  - generic "0.0" [ref=e252]
+            - generic: ● ●
+      - generic [ref=e253]:
+        - generic [ref=e254]:
+          - generic [ref=e255]:
+            - button "All 8" [ref=e256] [cursor=pointer]
+            - button "New 2" [ref=e257] [cursor=pointer]
+            - button "Active 4" [ref=e258] [cursor=pointer]
+            - button "Assigned to me 2" [ref=e259] [cursor=pointer]
+          - generic [ref=e260]:
+            - button "List" [ref=e261] [cursor=pointer]:
+              - img [ref=e262]
+              - text: List
+            - button "Kanban" [ref=e264] [cursor=pointer]:
+              - img [ref=e265]
+              - text: Kanban
+        - generic [ref=e269]:
+          - generic [ref=e270]:
+            - img
+            - searchbox "Search leads, contacts, IDs…" [ref=e271]
+          - generic [ref=e272]:
+            - generic [ref=e273]:
+              - combobox [ref=e274]:
+                - option "All stages" [selected]
+                - option "New"
+                - option "Assigned"
+                - option "Contacted"
+                - option "Qualified"
+                - option "Proposal"
+                - option "Closed"
+              - img
+            - generic [ref=e275]:
+              - combobox [ref=e276]:
+                - option "All dispositions" [selected]
+                - option "Converted"
+                - option "Not Interested"
+                - option "Follow-up Scheduled"
+                - option "Unreachable"
+                - option "Junk"
+              - img
+            - generic [ref=e277]:
+              - combobox [ref=e278]:
+                - option "All sources" [selected]
+                - option "Google"
+                - option "Meta"
+                - option "Referral"
+                - option "Organic"
+                - option "Email"
+                - option "WhatsApp"
+                - option "Manual"
+              - img
+            - generic [ref=e279]:
+              - combobox [ref=e280]:
+                - option "All owners" [selected]
+                - option "Aarav Mehta"
+                - option "Riya Kapoor"
+                - option "Devansh Shah"
+                - option "Priya Nair"
+                - option "Karan Joshi"
+              - img
+            - button "Reset" [ref=e281] [cursor=pointer]
+        - table [ref=e284]:
+          - rowgroup [ref=e285]:
+            - row "Lead Email / Phone Stage Disposition Source Owner SLA Updated" [ref=e286]:
+              - columnheader "Lead" [ref=e287]
+              - columnheader "Email / Phone" [ref=e288]
+              - columnheader "Stage" [ref=e289]
+              - columnheader "Disposition" [ref=e290]
+              - columnheader "Source" [ref=e291]
+              - columnheader "Owner" [ref=e292]
+              - columnheader "SLA" [ref=e293]
+              - columnheader "Updated" [ref=e294]
+          - rowgroup [ref=e295]:
+            - 'row "AV #2087 Anika Verma Verma Foods Pvt Ltd anika.verma@example.com +91 98456 12012 New — Google Spring_Family_2026 AM Aarav Mehta On track Due in 2d 22h Just now" [ref=e296]':
+              - 'cell "AV #2087 Anika Verma Verma Foods Pvt Ltd" [ref=e297]':
+                - 'link "AV #2087 Anika Verma Verma Foods Pvt Ltd" [ref=e298] [cursor=pointer]':
+                  - /url: /leads/LD-2087
+                  - generic [ref=e299]: AV
+                  - generic [ref=e300]:
+                    - text: "#2087"
+                    - paragraph [ref=e301]: Anika Verma
+                    - paragraph [ref=e302]: Verma Foods Pvt Ltd
+              - cell "anika.verma@example.com +91 98456 12012" [ref=e303]:
+                - generic [ref=e304]:
+                  - paragraph [ref=e305]: anika.verma@example.com
+                  - paragraph [ref=e306]: +91 98456 12012
+              - cell "New" [ref=e307]:
+                - generic [ref=e308]: New
+              - cell "—" [ref=e310]:
+                - generic [ref=e311]: —
+              - cell "Google Spring_Family_2026" [ref=e312]:
+                - generic [ref=e313]: Google
+                - paragraph [ref=e314]: Spring_Family_2026
+              - cell "AM Aarav Mehta" [ref=e315]:
+                - generic [ref=e316]:
+                  - generic [ref=e317]: AM
+                  - generic [ref=e318]: Aarav Mehta
+              - cell "On track Due in 2d 22h" [ref=e319]:
+                - generic [ref=e320]:
+                  - generic [ref=e321]: On track
+                  - generic [ref=e323]: Due in 2d 22h
+              - cell "Just now" [ref=e324]
+            - 'row "RI #2086 Rahul Iyer Iyer Trading Co rahul.iyer@example.com +91 99876 45712 Contacted — Meta Welcome50_Apr DS Devansh Shah On track Due in 2d 5h Today, 07:50" [ref=e325]':
+              - 'cell "RI #2086 Rahul Iyer Iyer Trading Co" [ref=e326]':
+                - 'link "RI #2086 Rahul Iyer Iyer Trading Co" [ref=e327] [cursor=pointer]':
+                  - /url: /leads/LD-2086
+                  - generic [ref=e328]: RI
+                  - generic [ref=e329]:
+                    - text: "#2086"
+                    - paragraph [ref=e330]: Rahul Iyer
+                    - paragraph [ref=e331]: Iyer Trading Co
+              - cell "rahul.iyer@example.com +91 99876 45712" [ref=e332]:
+                - generic [ref=e333]:
+                  - paragraph [ref=e334]: rahul.iyer@example.com
+                  - paragraph [ref=e335]: +91 99876 45712
+              - cell "Contacted" [ref=e336]:
+                - generic [ref=e337]: Contacted
+              - cell "—" [ref=e339]:
+                - generic [ref=e340]: —
+              - cell "Meta Welcome50_Apr" [ref=e341]:
+                - generic [ref=e342]: Meta
+                - paragraph [ref=e343]: Welcome50_Apr
+              - cell "DS Devansh Shah" [ref=e344]:
+                - generic [ref=e345]:
+                  - generic [ref=e346]: DS
+                  - generic [ref=e347]: Devansh Shah
+              - cell "On track Due in 2d 5h" [ref=e348]:
+                - generic [ref=e349]:
+                  - generic [ref=e350]: On track
+                  - generic [ref=e352]: Due in 2d 5h
+              - cell "Today, 07:50" [ref=e353]
+            - 'row "MN #2085 Meera Nair meera.n@example.com +91 91234 56712 Qualified — Referral Customer_Referral_Q2 RK Riya Kapoor On track Due in 4d Yesterday, 16:30" [ref=e354]':
+              - 'cell "MN #2085 Meera Nair" [ref=e355]':
+                - 'link "MN #2085 Meera Nair" [ref=e356] [cursor=pointer]':
+                  - /url: /leads/LD-2085
+                  - generic [ref=e357]: MN
+                  - generic [ref=e358]:
+                    - text: "#2085"
+                    - paragraph [ref=e359]: Meera Nair
+              - cell "meera.n@example.com +91 91234 56712" [ref=e360]:
+                - generic [ref=e361]:
+                  - paragraph [ref=e362]: meera.n@example.com
+                  - paragraph [ref=e363]: +91 91234 56712
+              - cell "Qualified" [ref=e364]:
+                - generic [ref=e365]: Qualified
+              - cell "—" [ref=e367]:
+                - generic [ref=e368]: —
+              - cell "Referral Customer_Referral_Q2" [ref=e369]:
+                - generic [ref=e370]: Referral
+                - paragraph [ref=e371]: Customer_Referral_Q2
+              - cell "RK Riya Kapoor" [ref=e372]:
+                - generic [ref=e373]:
+                  - generic [ref=e374]: RK
+                  - generic [ref=e375]: Riya Kapoor
+              - cell "On track Due in 4d" [ref=e376]:
+                - generic [ref=e377]:
+                  - generic [ref=e378]: On track
+                  - generic [ref=e380]: Due in 4d
+              - cell "Yesterday, 16:30" [ref=e381]
+            - 'row "AR #2084 Aditya Roy Roy Hospitality aditya.roy@example.com +91 90011 22334 Assigned — Google B2B_Office_Lunch AM Aarav Mehta At risk Due in 1d 22h Yesterday, 09:01" [ref=e382]':
+              - 'cell "AR #2084 Aditya Roy Roy Hospitality" [ref=e383]':
+                - 'link "AR #2084 Aditya Roy Roy Hospitality" [ref=e384] [cursor=pointer]':
+                  - /url: /leads/LD-2084
+                  - generic [ref=e385]: AR
+                  - generic [ref=e386]:
+                    - text: "#2084"
+                    - paragraph [ref=e387]: Aditya Roy
+                    - paragraph [ref=e388]: Roy Hospitality
+              - cell "aditya.roy@example.com +91 90011 22334" [ref=e389]:
+                - generic [ref=e390]:
+                  - paragraph [ref=e391]: aditya.roy@example.com
+                  - paragraph [ref=e392]: +91 90011 22334
+              - cell "Assigned" [ref=e393]:
+                - generic [ref=e394]: Assigned
+              - cell "—" [ref=e396]:
+                - generic [ref=e397]: —
+              - cell "Google B2B_Office_Lunch" [ref=e398]:
+                - generic [ref=e399]: Google
+                - paragraph [ref=e400]: B2B_Office_Lunch
+              - cell "AM Aarav Mehta" [ref=e401]:
+                - generic [ref=e402]:
+                  - generic [ref=e403]: AM
+                  - generic [ref=e404]: Aarav Mehta
+              - cell "At risk Due in 1d 22h" [ref=e405]:
+                - generic [ref=e406]:
+                  - generic [ref=e407]: At risk
+                  - generic [ref=e409]: Due in 1d 22h
+              - cell "Yesterday, 09:01" [ref=e410]
+            - 'row "SG #2083 Saanvi Gupta saanvi.g@example.com +91 90909 12121 Closed Converted Organic Direct_Search RK Riya Kapoor Met Closed 3d early Apr 24, 15:30" [ref=e411]':
+              - 'cell "SG #2083 Saanvi Gupta" [ref=e412]':
+                - 'link "SG #2083 Saanvi Gupta" [ref=e413] [cursor=pointer]':
+                  - /url: /leads/LD-2083
+                  - generic [ref=e414]: SG
+                  - generic [ref=e415]:
+                    - text: "#2083"
+                    - paragraph [ref=e416]: Saanvi Gupta
+              - cell "saanvi.g@example.com +91 90909 12121" [ref=e417]:
+                - generic [ref=e418]:
+                  - paragraph [ref=e419]: saanvi.g@example.com
+                  - paragraph [ref=e420]: +91 90909 12121
+              - cell "Closed" [ref=e421]:
+                - generic [ref=e422]: Closed
+              - cell "Converted" [ref=e424]:
+                - generic [ref=e425]: Converted
+              - cell "Organic Direct_Search" [ref=e426]:
+                - generic [ref=e427]: Organic
+                - paragraph [ref=e428]: Direct_Search
+              - cell "RK Riya Kapoor" [ref=e429]:
+                - generic [ref=e430]:
+                  - generic [ref=e431]: RK
+                  - generic [ref=e432]: Riya Kapoor
+              - cell "Met Closed 3d early" [ref=e433]:
+                - generic [ref=e434]:
+                  - generic [ref=e435]: Met
+                  - generic [ref=e437]: Closed 3d early
+              - cell "Apr 24, 15:30" [ref=e438]
+            - 'row "VS #2082 Vikram Sethi Sethi Wellness vikram.sethi@example.com +91 98123 77821 Closed Not Interested Meta Spring_Family_2026 PN Priya Nair Met Closed Apr 23, 18:00" [ref=e439]':
+              - 'cell "VS #2082 Vikram Sethi Sethi Wellness" [ref=e440]':
+                - 'link "VS #2082 Vikram Sethi Sethi Wellness" [ref=e441] [cursor=pointer]':
+                  - /url: /leads/LD-2082
+                  - generic [ref=e442]: VS
+                  - generic [ref=e443]:
+                    - text: "#2082"
+                    - paragraph [ref=e444]: Vikram Sethi
+                    - paragraph [ref=e445]: Sethi Wellness
+              - cell "vikram.sethi@example.com +91 98123 77821" [ref=e446]:
+                - generic [ref=e447]:
+                  - paragraph [ref=e448]: vikram.sethi@example.com
+                  - paragraph [ref=e449]: +91 98123 77821
+              - cell "Closed" [ref=e450]:
+                - generic [ref=e451]: Closed
+              - cell "Not Interested" [ref=e453]:
+                - generic [ref=e454]: Not Interested
+              - cell "Meta Spring_Family_2026" [ref=e455]:
+                - generic [ref=e456]: Meta
+                - paragraph [ref=e457]: Spring_Family_2026
+              - cell "PN Priya Nair" [ref=e458]:
+                - generic [ref=e459]:
+                  - generic [ref=e460]: PN
+                  - generic [ref=e461]: Priya Nair
+              - cell "Met Closed" [ref=e462]:
+                - generic [ref=e463]:
+                  - generic [ref=e464]: Met
+                  - generic [ref=e466]: Closed
+              - cell "Apr 23, 18:00" [ref=e467]
+            - 'row "NP #2081 Nisha Pillai nisha.p@example.com +91 99887 33112 Proposal — WhatsApp Inbound_Chat DS Devansh Shah On track Due in 3d 7h Today, 07:00" [ref=e468]':
+              - 'cell "NP #2081 Nisha Pillai" [ref=e469]':
+                - 'link "NP #2081 Nisha Pillai" [ref=e470] [cursor=pointer]':
+                  - /url: /leads/LD-2081
+                  - generic [ref=e471]: NP
+                  - generic [ref=e472]:
+                    - text: "#2081"
+                    - paragraph [ref=e473]: Nisha Pillai
+              - cell "nisha.p@example.com +91 99887 33112" [ref=e474]:
+                - generic [ref=e475]:
+                  - paragraph [ref=e476]: nisha.p@example.com
+                  - paragraph [ref=e477]: +91 99887 33112
+              - cell "Proposal" [ref=e478]:
+                - generic [ref=e479]: Proposal
+              - cell "—" [ref=e481]:
+                - generic [ref=e482]: —
+              - cell "WhatsApp Inbound_Chat" [ref=e483]:
+                - generic [ref=e484]: WhatsApp
+                - paragraph [ref=e485]: Inbound_Chat
+              - cell "DS Devansh Shah" [ref=e486]:
+                - generic [ref=e487]:
+                  - generic [ref=e488]: DS
+                  - generic [ref=e489]: Devansh Shah
+              - cell "On track Due in 3d 7h" [ref=e490]:
+                - generic [ref=e491]:
+                  - generic [ref=e492]: On track
+                  - generic [ref=e494]: Due in 3d 7h
+              - cell "Today, 07:00" [ref=e495]
+            - 'row "KB #2080 Karthik Bose Bose Tech Labs karthik.bose@example.com +91 90123 99821 Contacted — Email Q2_Enterprise_Newsletter KJ Karan Joshi On track Due in 6d 23h Apr 23, 12:30" [ref=e496]':
+              - 'cell "KB #2080 Karthik Bose Bose Tech Labs" [ref=e497]':
+                - 'link "KB #2080 Karthik Bose Bose Tech Labs" [ref=e498] [cursor=pointer]':
+                  - /url: /leads/LD-2080
+                  - generic [ref=e499]: KB
+                  - generic [ref=e500]:
+                    - text: "#2080"
+                    - paragraph [ref=e501]: Karthik Bose
+                    - paragraph [ref=e502]: Bose Tech Labs
+              - cell "karthik.bose@example.com +91 90123 99821" [ref=e503]:
+                - generic [ref=e504]:
+                  - paragraph [ref=e505]: karthik.bose@example.com
+                  - paragraph [ref=e506]: +91 90123 99821
+              - cell "Contacted" [ref=e507]:
+                - generic [ref=e508]: Contacted
+              - cell "—" [ref=e510]:
+                - generic [ref=e511]: —
+              - cell "Email Q2_Enterprise_Newsletter" [ref=e512]:
+                - generic [ref=e513]: Email
+                - paragraph [ref=e514]: Q2_Enterprise_Newsletter
+              - cell "KJ Karan Joshi" [ref=e515]:
+                - generic [ref=e516]:
+                  - generic [ref=e517]: KJ
+                  - generic [ref=e518]: Karan Joshi
+              - cell "On track Due in 6d 23h" [ref=e519]:
+                - generic [ref=e520]:
+                  - generic [ref=e521]: On track
+                  - generic [ref=e523]: Due in 6d 23h
+              - cell "Apr 23, 12:30" [ref=e524]
